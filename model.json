@@ -1,0 +1,49 @@
+{
+    "tables": [
+        {
+            "user": {
+                "columns": [
+                    {
+                        "name": "id",
+                        "type": "bigint(20)",
+                        "explanation": "主键id"
+                    },
+                    {
+                        "name": "name",
+                        "type": "varchar(30)",
+                        "explanation": "名称"
+                    },
+                    {
+                        "name": "age",
+                        "type": "int(11)",
+                        "explanation": "年龄"
+                    }
+                ],
+                "description": "This is a table for testing"
+            }
+        },
+        {
+            "user": {
+                "columns": [
+                    {
+                        "name": "id",
+                        "type": "bigint(20)",
+                        "explanation": "主键id"
+                    },
+                    {
+                        "name": "name",
+                        "type": "varchar(30)",
+                        "explanation": "名称"
+                    },
+                    {
+                        "name": "age",
+                        "type": "int(11)",
+                        "explanation": "年龄"
+                    }
+                ],
+                "description": "This is a table for testing"
+            }
+        }
+    ],
+    "relationships": "This is a database for testing"
+}

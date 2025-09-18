@@ -1,0 +1,7602 @@
+[
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_plan_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_plan_code_day",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划编号"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_plan_name",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "mainsend",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报送单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "mainsend_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报送单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "substation_name",
+		"COLUMN_TYPE" : "varchar(1500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "变电站\/线路名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "substation_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "变电站\/线路ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "voltage_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电压等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业类型"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_state",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划执行状态"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "power_cut",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否停电(01 是 02 否)"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "live_work_flag",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否带电作业（01 是 02 否）"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划开工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划结束时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "workcontents",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业内容"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_place",
+		"COLUMN_TYPE" : "varchar(2000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业地点"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_place_reference",
+		"COLUMN_TYPE" : "varchar(500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "重点参照物"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "majorworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "主业单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "outworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "外包单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "industrialworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "产业单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_manager",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_manager_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "work_manager_contact",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人联系方式"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "enter_people_name_province",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "enter_people_name_province_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "enter_people_name_city",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "enter_people_name_city_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "enter_people_name_county",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "县级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "enter_people_name_county_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "县级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "construction_org",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "construction_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "subcontract_org",
+		"COLUMN_TYPE" : "varchar(1500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "subcontract_nature",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位性质"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "subcontract_org_id",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "supervisororg",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "监理单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "supervisororg_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "监理单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "workrisk_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业风险等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "gridrisk_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电网风险等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "week_work_plan_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "关联周计划ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "project_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "datafill_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据填报单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "datafill_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据填报单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "datareport_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据上报单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "datareport_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据上报单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "datacommon_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "同一条数据公共ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "province_code",
+		"COLUMN_TYPE" : "varchar(16)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省编码"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "city_code",
+		"COLUMN_TYPE" : "varchar(16)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市编码"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "date_indexs",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间索引"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "inspect_manage_man_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察负责人id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "inspectman_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察管理人id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "survey_status",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察状态"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "wrok_plan_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划来源"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "video_bond_time",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "布控球开机时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "is_temporary",
+		"COLUMN_TYPE" : "char(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否临时抢修计划（0：临时抢修计划，1：日计划 ）"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "manage_dep",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "专业管理部门"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "cancel_reason",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "取消原因"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "supervise_type",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否督查"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "real_begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际开工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "real_end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际完工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "title",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作票id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "pw_work_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "配网作业类型"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "is_multi_contents",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否多地点作业"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "entr_time",
+		"COLUMN_TYPE" : "time",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "入场时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "left_time",
+		"COLUMN_TYPE" : "time",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "离场时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标点"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_plan_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_plan_code_day",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划编号"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_plan_name",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "mainsend",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报送单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "mainsend_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报送单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "substation_name",
+		"COLUMN_TYPE" : "varchar(1500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "变电站\/线路名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "substation_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "变电站\/线路ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "voltage_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电压等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业类型"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_state",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划执行状态"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "power_cut",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否停电(01 是 02 否)"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "live_work_flag",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否带电作业（01 是 02 否）"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划开工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划结束时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "workcontents",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业内容"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_place",
+		"COLUMN_TYPE" : "varchar(2000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业地点"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_place_reference",
+		"COLUMN_TYPE" : "varchar(500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "重点参照物"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "majorworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "主业单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "outworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "外包单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "industrialworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "产业单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_manager",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_manager_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "work_manager_contact",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人联系方式"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "enter_people_name_province",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "enter_people_name_province_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "enter_people_name_city",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "enter_people_name_city_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "enter_people_name_county",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "县级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "enter_people_name_county_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "县级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "construction_org",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "construction_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "subcontract_org",
+		"COLUMN_TYPE" : "varchar(1500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "subcontract_nature",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位性质"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "subcontract_org_id",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "supervisororg",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "监理单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "supervisororg_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "监理单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "workrisk_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业风险等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "gridrisk_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电网风险等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "week_work_plan_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "关联周计划ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "project_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "datafill_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据填报单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "datafill_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据填报单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "datareport_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据上报单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "datareport_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据上报单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "datacommon_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "同一条数据公共ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "province_code",
+		"COLUMN_TYPE" : "varchar(16)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省编码"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "city_code",
+		"COLUMN_TYPE" : "varchar(16)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市编码"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "date_indexs",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间索引"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "inspect_manage_man_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察负责人id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "inspectman_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察管理人id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "survey_status",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察状态"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "wrok_plan_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划来源"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "video_bond_time",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "布控球开机时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "is_temporary",
+		"COLUMN_TYPE" : "char(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否临时抢修计划（0：临时抢修计划，1：日计划 ）"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "manage_dep",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "专业管理部门"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "cancel_reason",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "取消原因"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "supervise_type",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否督查"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "real_begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际开工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "real_end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际完工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "title",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作票id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "pw_work_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "配网作业类型"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "is_multi_contents",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否多地点作业"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "entr_time",
+		"COLUMN_TYPE" : "time",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "入场时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "left_time",
+		"COLUMN_TYPE" : "time",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "离场时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy1",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标点"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_plan_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_plan_code_day",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划编号"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_plan_name",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "mainsend",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报送单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "mainsend_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报送单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "substation_name",
+		"COLUMN_TYPE" : "varchar(1500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "变电站\/线路名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "substation_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "变电站\/线路ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "voltage_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电压等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业类型"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_state",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划执行状态"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "power_cut",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否停电(01 是 02 否)"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "live_work_flag",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否带电作业（01 是 02 否）"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划开工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划结束时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "workcontents",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业内容"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_place",
+		"COLUMN_TYPE" : "varchar(2000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业地点"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_place_reference",
+		"COLUMN_TYPE" : "varchar(500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "重点参照物"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "majorworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "主业单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "outworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "外包单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "industrialworker_num",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "产业单位作业人数"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_manager",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_manager_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "work_manager_contact",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作负责人联系方式"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "enter_people_name_province",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "enter_people_name_province_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "enter_people_name_city",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "enter_people_name_city_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "enter_people_name_county",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "县级到岗到位人员"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "enter_people_name_county_id",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "县级到岗到位人员ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "construction_org",
+		"COLUMN_TYPE" : "varchar(200)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "construction_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "subcontract_org",
+		"COLUMN_TYPE" : "varchar(1500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "subcontract_nature",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位性质"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "subcontract_org_id",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "supervisororg",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "监理单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "supervisororg_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "监理单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "workrisk_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业风险等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "gridrisk_level",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电网风险等级"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "week_work_plan_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "关联周计划ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目名称"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "project_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "datafill_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据填报单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "datafill_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据填报单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "datareport_org",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据上报单位"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "datareport_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据上报单位ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "datacommon_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "同一条数据公共ID"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "province_code",
+		"COLUMN_TYPE" : "varchar(16)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "省编码"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "city_code",
+		"COLUMN_TYPE" : "varchar(16)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "市编码"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "date_indexs",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间索引"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "inspect_manage_man_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察负责人id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "inspectman_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察管理人id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "survey_status",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "勘察状态"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "wrok_plan_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划来源"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "video_bond_time",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "布控球开机时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "is_temporary",
+		"COLUMN_TYPE" : "char(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否临时抢修计划（0：临时抢修计划，1：日计划 ）"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "manage_dep",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "专业管理部门"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "cancel_reason",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "取消原因"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "supervise_type",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否督查"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "real_begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际开工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "real_end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际完工时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "title",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工作票id"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "pw_work_type",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "配网作业类型"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "is_multi_contents",
+		"COLUMN_TYPE" : "varchar(10)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否多地点作业"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "entr_time",
+		"COLUMN_TYPE" : "time",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "入场时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "left_time",
+		"COLUMN_TYPE" : "time",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "离场时间"
+	},
+	{
+		"TABLE_NAME" : "ads_prj_rjh_workplanday_di_code_copy2",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标点"
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "uuid",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "id"
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "type",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "类型 1是工作现场 2 车辆 3 人员"
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "coordinate",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "content",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "内容"
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "ai_uav_resource",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "isc_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "bmmc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门名称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "bmxz",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门性质"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "bmbm",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门编码"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "sjbm_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门id"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "xssx",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "显示顺序"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "cjsj",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "tbsj",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "同步时间"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "cxsj",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "撤销时间"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "sfyx",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据有效性"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssws_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属网省id"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssds_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属地市id"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssgd_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属供电公司id"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "dwjb",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "单位级别"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "组织全路径"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "path_id",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "组织全路径id"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssywdw_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属运维单位id"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "zzjgqc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "组织机构全称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "sjbmmc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门名称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "sswsmc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属网省名称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssdsmc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属地市名称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssgdmc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属供电公司名称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "ssywdwmc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属运维单位名称"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "sfcx",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否撤销"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "extend_field_update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "从中台导出时间"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "bd_org",
+		"COLUMN_NAME" : "extend_type",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "扩展类型，1 省公司信通审批处室  2 省公司数字化部审批处室  3 省公司专业部门审批处室  4 地市数字化专业部门审批处室  5 当前单位审批部门"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "isc_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "rymc",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员名称"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "ssbm_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属部门id"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "cjsj",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "tbsj",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "同步时间"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "sfyx",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据有效性"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "ryxb",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员性别"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "ssdw_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属单位id"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "approver",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否具有审批权限：1 账号审批权限"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "login_name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员登录名"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "login_password",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "登录密码"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "sftx",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否退休"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "extend_field_update_time",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "从中台导出时间"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "bd_user",
+		"COLUMN_NAME" : "role",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "角色：1：超级管理员；2：普通角色"
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目"
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位编码"
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "geo_point",
+		"COLUMN_TYPE" : "point",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "e_point",
+		"COLUMN_NAME" : "sort",
+		"COLUMN_TYPE" : "int(5)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "杆塔顺序"
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目"
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位编码"
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "geo_point",
+		"COLUMN_TYPE" : "point",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "e_point_0527liuchangtigongzuixin",
+		"COLUMN_NAME" : "sort",
+		"COLUMN_TYPE" : "int(5)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "杆塔顺序"
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目"
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位编码"
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "geo_point",
+		"COLUMN_TYPE" : "point",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "e_point_0529yuanbiao",
+		"COLUMN_NAME" : "sort",
+		"COLUMN_TYPE" : "int(5)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "杆塔顺序"
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目"
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位编码"
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "geo_point",
+		"COLUMN_TYPE" : "point",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "e_point_0603bak",
+		"COLUMN_NAME" : "sort",
+		"COLUMN_TYPE" : "int(5)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "杆塔顺序"
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目"
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "point_code",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位编码"
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "geo_point",
+		"COLUMN_TYPE" : "point",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "e_point_0604bak",
+		"COLUMN_NAME" : "sort",
+		"COLUMN_TYPE" : "int(5)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "杆塔顺序"
+	},
+	{
+		"TABLE_NAME" : "e_point_code",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_code",
+		"COLUMN_NAME" : "project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目"
+	},
+	{
+		"TABLE_NAME" : "e_point_code",
+		"COLUMN_NAME" : "point_code_",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位编码"
+	},
+	{
+		"TABLE_NAME" : "e_point_code",
+		"COLUMN_NAME" : "project_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "包段编码"
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12",
+		"COLUMN_NAME" : "o_lat",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12",
+		"COLUMN_NAME" : "o_lng",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12_copy1",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12_copy1",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12_copy1",
+		"COLUMN_NAME" : "o_lat",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_santongdao_bao12_copy1",
+		"COLUMN_NAME" : "o_lng",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "uav_resource_id",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机资源id"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "e_point_id",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "e基建原始坐标点位"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "plan_id",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划id"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "check_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查状态 0 未核查   1 已核查"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "risk_level",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险等级  风险等级 0无风险   1低风险   2中风险    3高风险"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "check_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查时间"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "check_remark",
+		"COLUMN_TYPE" : "varchar(300)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查描述"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "data_resource",
+		"COLUMN_TYPE" : "int(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据来源"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "ai_check_status",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查状态 0 未核查   1 已核查"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "ai_risk_level",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险等级  风险等级 0无风险   1低风险   2中风险    3高风险"
+	},
+	{
+		"TABLE_NAME" : "e_point_uav_resource",
+		"COLUMN_NAME" : "is_ai",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否ai"
+	},
+	{
+		"TABLE_NAME" : "e_project",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_project",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工程名称"
+	},
+	{
+		"TABLE_NAME" : "e_project",
+		"COLUMN_NAME" : "project_name_bak",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工程名称"
+	},
+	{
+		"TABLE_NAME" : "e_project_bao_duan",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_project_bao_duan",
+		"COLUMN_NAME" : "e_project_name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "工程名称"
+	},
+	{
+		"TABLE_NAME" : "e_project_bao_duan",
+		"COLUMN_NAME" : "bao_duan",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "包段"
+	},
+	{
+		"TABLE_NAME" : "e_project_bao_duan",
+		"COLUMN_NAME" : "project_baoduan",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "标段"
+	},
+	{
+		"TABLE_NAME" : "e_project_bao_duan",
+		"COLUMN_NAME" : "code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员编码或部门编码"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位队伍名称"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "pid",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "charge",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "负责人"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "tel",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电话"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "del_flag",
+		"COLUMN_TYPE" : "int(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "bd",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "标段"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "station_info",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "驻地信息"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "station_longitude",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "驻地位置（经度）"
+	},
+	{
+		"TABLE_NAME" : "e_team",
+		"COLUMN_NAME" : "station_latitude",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "驻地位置（纬度）"
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位队伍名称"
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "pid",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "charge",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "负责人"
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "tel",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电话"
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "del_flag",
+		"COLUMN_TYPE" : "int(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "e_team_copy",
+		"COLUMN_NAME" : "bd",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "标段"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备编码"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备名称"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "type",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型 01 车辆 02 人在感知 03 工器具"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "model",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "型号"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "org",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属单位"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "custodial_staff",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "保管人"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "custodial_staff_phone",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "保管人联系电话"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "status",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备状态"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "position_terminal_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "定位终端编号"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "position_terminal_type",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "定位终端类型"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "beidou_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "北斗卡号"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "support_position_upload",
+		"COLUMN_TYPE" : "char(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "支持位置上报  Y支持   N不支持"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "support_short_message",
+		"COLUMN_TYPE" : "char(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "支持短报文上报 Y支持  N不支持"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "备注"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "e_point_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "所属标段id"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "contractor",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "subcontractor",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "分包单位"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "license_plate",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "车牌号"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "vehicle_registration",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "行驶证文件地址"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "e_point_project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "标段名"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "is_resident",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否常驻"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "e_point_point_code",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "杆塔"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "work_plan_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划id"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "is_plan_id",
+		"COLUMN_TYPE" : "tinyint(4)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否关联作业地点"
+	},
+	{
+		"TABLE_NAME" : "sb_device",
+		"COLUMN_NAME" : "picture",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "照片文件地址"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "device_type",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型  01车辆  02人在感知  03工器具"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备编码"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警级别  1低风险   2中风险   3高风险"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "distance",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "距离"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "time_span",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间跨度,单位分钟"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "limit_val",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "限制次数"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config",
+		"COLUMN_NAME" : "updator",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "修改人"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "device_type",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型  01车辆  02人在感知  03工器具"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备编码"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警级别  1低风险   2中风险   3高风险"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "distance",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "距离"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "time_span",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间跨度,单位分钟"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "limit_val",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "限制次数"
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_alarm_config_copy1",
+		"COLUMN_NAME" : "updator",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "修改人"
+	},
+	{
+		"TABLE_NAME" : "sb_device_attributes",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_device_attributes",
+		"COLUMN_NAME" : "device_id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备id"
+	},
+	{
+		"TABLE_NAME" : "sb_device_attributes",
+		"COLUMN_NAME" : "attribute_name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "属性名"
+	},
+	{
+		"TABLE_NAME" : "sb_device_attributes",
+		"COLUMN_NAME" : "attribute_value",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "属性值"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备编号"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "device_type",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型 01 车辆 02 人在感知 03 工器具"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "altitude",
+		"COLUMN_TYPE" : "double(255,0)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "高程"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "coordinate",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "trigger_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "触发时间"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "alarm_type",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报警类型（探针报警含类型）"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "alarm_info",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报警信息描述"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "备注"
+	},
+	{
+		"TABLE_NAME" : "sb_position",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备编号"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "device_type",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型 01 车辆 02 人在感知 03 工器具"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "altitude",
+		"COLUMN_TYPE" : "double(255,0)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "高程"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "coordinate",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "坐标"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "trigger_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "触发时间"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "alarm_type",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报警类型（探针报警含类型）"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "alarm_info",
+		"COLUMN_TYPE" : "varchar(56)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报警信息描述"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "备注"
+	},
+	{
+		"TABLE_NAME" : "sb_position_copy1",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sys_baoduan_code",
+		"COLUMN_NAME" : "baoduan_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "包段id"
+	},
+	{
+		"TABLE_NAME" : "sys_baoduan_code",
+		"COLUMN_NAME" : "code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员编码或部门编码或公司编码"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "org_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门ID"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "org_name",
+		"COLUMN_TYPE" : "varchar(400)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "org_type",
+		"COLUMN_TYPE" : "varchar(120)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "parent_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门ID"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "org_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径部门Id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "org_name_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "cms_org_no",
+		"COLUMN_TYPE" : "varchar(32)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "营销机构编码"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org",
+		"COLUMN_NAME" : "cms_org_name",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "营销机构编码名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "org_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门ID"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "org_name",
+		"COLUMN_TYPE" : "varchar(400)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "org_type",
+		"COLUMN_TYPE" : "varchar(120)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "parent_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门ID"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "org_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径部门Id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "org_name_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "cms_org_no",
+		"COLUMN_TYPE" : "varchar(32)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "营销机构编码"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_org_250525",
+		"COLUMN_NAME" : "cms_org_name",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "营销机构编码名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "user_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "用户ID"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "baseorg_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门Id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "username",
+		"COLUMN_TYPE" : "varchar(480)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "用户名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "namecode",
+		"COLUMN_TYPE" : "varchar(400)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "用户OA"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "title",
+		"COLUMN_TYPE" : "varchar(320)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "org_name",
+		"COLUMN_TYPE" : "varchar(400)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "org_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "org_name_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "parent_org_id",
+		"COLUMN_TYPE" : "varchar(320)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user",
+		"COLUMN_NAME" : "parent_org_name",
+		"COLUMN_TYPE" : "varchar(320)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "user_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "用户ID"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "baseorg_id",
+		"COLUMN_TYPE" : "varchar(128)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门Id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "username",
+		"COLUMN_TYPE" : "varchar(480)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "用户名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "namecode",
+		"COLUMN_TYPE" : "varchar(400)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "用户OA"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "title",
+		"COLUMN_TYPE" : "varchar(320)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "org_name",
+		"COLUMN_TYPE" : "varchar(400)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "org_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "org_name_path",
+		"COLUMN_TYPE" : "varchar(1000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "全路径名称"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "parent_org_id",
+		"COLUMN_TYPE" : "varchar(320)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门id"
+	},
+	{
+		"TABLE_NAME" : "sys_isc_user_250525",
+		"COLUMN_NAME" : "parent_org_name",
+		"COLUMN_TYPE" : "varchar(320)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上级部门名称"
+	},
+	{
+		"TABLE_NAME" : "sys_role",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : "角色主键id"
+	},
+	{
+		"TABLE_NAME" : "sys_role",
+		"COLUMN_NAME" : "role",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "角色：1：超级管理员；2：普通角色"
+	},
+	{
+		"TABLE_NAME" : "sys_role",
+		"COLUMN_NAME" : "role_name",
+		"COLUMN_TYPE" : "varchar(30)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "角色名称"
+	},
+	{
+		"TABLE_NAME" : "sys_role",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "sys_role",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "sys_user_role",
+		"COLUMN_NAME" : "user_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员编码"
+	},
+	{
+		"TABLE_NAME" : "sys_user_role",
+		"COLUMN_NAME" : "role_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "角色id"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "address",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "位置"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "autopliot_sn",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "飞控编号"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "channel",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "通道"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "created_at",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "custom_name",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "自定义名称"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "uav_id",
+		"COLUMN_TYPE" : "bigint(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "id"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "is_update",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否可更新"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "manufacturer",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "厂商"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "product_id",
+		"COLUMN_TYPE" : "bigint(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机对应更新飞控程序唯一标识"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "registration_no",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机登记号"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "total_count",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "飞行总架次"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "type",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "类别"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "type_id",
+		"COLUMN_TYPE" : "bigint(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "类别id"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "uav_fversion",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机当前飞控版本"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "uav_model",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "型号"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "uav_model_id",
+		"COLUMN_TYPE" : "bigint(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "型号id"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "uav_sn",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "编号"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "uav_state",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机状态 0离线 1在线 2更新中"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "updated_at",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "更新时间"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "pic",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "照片"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "driver",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "飞手"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "tel",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "电话"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "data_recource",
+		"COLUMN_TYPE" : "int(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据来源"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "spot",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "点位"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "binds",
+		"COLUMN_TYPE" : "varchar(500)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "可巡飞标段"
+	},
+	{
+		"TABLE_NAME" : "uav",
+		"COLUMN_NAME" : "entry_at",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "进入系统时间"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "mession_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务ID"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "e_point_point_code",
+		"COLUMN_TYPE" : "varchar(60)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "e基建点位编号"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "e_point_project",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "e基建项目"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "alarm_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警id"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "work_plan_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划id"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "work_plan_name",
+		"COLUMN_TYPE" : "text",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业名称"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "work_place",
+		"COLUMN_TYPE" : "varchar(2000)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业地点"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "task_person_name",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务下发人"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "task_status",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "执行状态：1 待创建，2 待开始 3 执行中"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "uav_resource_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机资源id"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "check_status",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查状态 0 待核查   1 已核查属实 2 已核查不属实"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "risk_level",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险等级  风险等级 1无风险   2低风险   3中风险    4高风险"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "check_remark",
+		"COLUMN_TYPE" : "varchar(300)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查描述"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "check_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查时间"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "mession_type",
+		"COLUMN_TYPE" : "int(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务类型"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "mession_name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务名称"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "plan_no",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划编号"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "plan_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划名称"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "plan_status",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划状态"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "plan_state",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划列表显示状态"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "plan_type",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务类型"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "start_site_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "起飞机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "start_site_sn",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "起飞机库sn"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "land_site_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "降落机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "land_site_sn",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "降落机库sn"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "uav_type",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划设备类型"
+	},
+	{
+		"TABLE_NAME" : "uav_flight_missions",
+		"COLUMN_NAME" : "uav_model_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "无人机型号"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "plan_no",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划编号"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "plan_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划名称"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "plan_status",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划状态"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "plan_state",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划列表显示状态"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "plan_type",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务类型"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "start_site_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "起飞机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "start_site_sn",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "起飞机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "land_site_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "降落机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "land_site_sn",
+		"COLUMN_TYPE" : "varchar(50)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "降落机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "uav_model_name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "降落机库名称"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "uav_type",
+		"COLUMN_TYPE" : "tinyint(2)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划设备类型"
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_plan",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "plan_no",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务编号"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "record_no",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "架次编号"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "file_type",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "文件类型"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "created_at",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "资源生成时间"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "file_name",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "文件名称"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "file_url",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "文件路径"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "file_id",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "文件id"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "经度"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "纬度"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "altitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "高度"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "geo_point",
+		"COLUMN_TYPE" : "point",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "文件坐标"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "data_resource",
+		"COLUMN_TYPE" : "int(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据来源"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "mession_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "任务ID"
+	},
+	{
+		"TABLE_NAME" : "uav_resource",
+		"COLUMN_NAME" : "is_ai",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "address",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "位置"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "created_at",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "创建时间"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "custom_name",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "自定义名称"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "hangar_fversion",
+		"COLUMN_TYPE" : "varchar(225)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "主控M1程序版本号"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "site_id",
+		"COLUMN_TYPE" : "bigint(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "id"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "is_online",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否在线"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "is_update",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "是否更新"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "manufacturer",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "厂商"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "site_model",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "型号"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "site_model_id",
+		"COLUMN_TYPE" : "bigint(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "站点型号id"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "site_sn",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "编号"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "station_type",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "站点类型"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "type",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "类别"
+	},
+	{
+		"TABLE_NAME" : "uav_site",
+		"COLUMN_NAME" : "type_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "类别id"
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "sn_id",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "飞控编号"
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "is_connected",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "true正常，false断连"
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "warn_type",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "0无风险；1三级缓冲区（发现），2二级缓冲区（靠近），3一级缓冲区（抵达），4地面风险"
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "nav_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "single_dual_link",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "time_stamp",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_lat",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_lon",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_h_m_s_l",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "v_gnd",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "v_north",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "v_east",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "v_down",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "num_s_v",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "p_d_o_p",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "pos_type",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "t_a_s",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "r_p_m",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "left_r_p_m",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "right_r_p_m",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "throttle",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_pitch",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_yaw",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_roll",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "main_power_v",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "main_power_a",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "ap_mode",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "photo_num",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "tracker",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "take_off",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "gps_heading",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "rtk_ext_sol_stat",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "flight_distance",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "cur_flight_time",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "assi_mode",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "rssi_status",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "sbus_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "uav_alt",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "tx",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "rx",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "mag_cali_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_forward_dist",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_downward_dist",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_left_dist",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_right_dist",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_back_dist",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_forward_state",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_downward_state",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_left_state",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_right_state",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "lidar_back_state",
+		"COLUMN_TYPE" : "tinyint(1)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "cam_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "cam_depth",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "wind_speed",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "south_wind",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "west_wind",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "device_model1",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "device_model2",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "uav_telemetry",
+		"COLUMN_NAME" : "trigger_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间戳，由time_stamp格式化而来"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(10) unsigned",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "work_plan_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业计划id"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "work_plan_name",
+		"COLUMN_TYPE" : "varchar(1024)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业名称"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "work_contents",
+		"COLUMN_TYPE" : "varchar(3072)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业内容"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "work_state",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业状态"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "work_org",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "work_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业单位id"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "longitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业经度"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "latitude",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业纬度"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "risk_type",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险类型"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "risk_type_name",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险类型名称"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "val",
+		"COLUMN_TYPE" : "double",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险值"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "pre_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险开始时间"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "data_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "风险结束时间"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "construction_org_id",
+		"COLUMN_TYPE" : "varchar(64)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位id"
+	},
+	{
+		"TABLE_NAME" : "weather_risk",
+		"COLUMN_NAME" : "construction_org",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "施工单位"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "alarm_source",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警来源：DW_DEVICE 定位设备监测       XS_UAV 无人机巡视"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警来源为DW_DEVICE时，存设备编码；告警来源为XS_UAV时，存资源ID"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "开始时间（发生时间）"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "(暂时不合并报警)"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "e_point_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "e_point_code",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "e基建点位code"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目名称"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报警等级 1 低风险   2 中风险   3 高风险"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "check_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查状态：0 未核查（初始默认）   1 已核查属实     2 已核查不属实"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "check_remark",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查备注"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "check_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查时间"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "device_type",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型  01车辆  02人在感知  03工器具"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警级别  1低风险   2中风险   3高风险"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "distance",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "距离"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "time_span",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间跨度,单位分钟"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "limit_val",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "限制次数"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_config",
+		"COLUMN_NAME" : "updator",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "修改者"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "alarm_source",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警来源：DW_DEVICE 定位设备监测       XS_UAV 无人机巡视"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警来源为DW_DEVICE时，存设备编码；告警来源为XS_UAV时，存资源ID"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "开始时间（发生时间）"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "(暂时不合并报警)"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "e_point_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "e_point_code",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "e基建点位code"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目名称"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "报警等级 1 低风险   2 中风险   3 高风险"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "check_status",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查状态：0 未核查（初始默认）   1 已核查属实     2 已核查不属实"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "check_remark",
+		"COLUMN_TYPE" : "varchar(256)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查备注"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "check_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "核查时间"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_copy2",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "device_code",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备编号"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "device_type",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备类型"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "开始时间"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "结束时间"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "e_point_id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业点id"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "e_point_code",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业点code"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "project_name",
+		"COLUMN_TYPE" : "varchar(125)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "项目名称"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警级别"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_sigle_point",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "int(11)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "alarm_level",
+		"COLUMN_TYPE" : "int(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "告警级别  1低风险   2中风险   3高风险"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "time_span",
+		"COLUMN_TYPE" : "int(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "时间跨度，单位分钟"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "single_alarm_level",
+		"COLUMN_TYPE" : "int(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "判定目标（由几种设备类型报的某一种风险，字段定义检查的”风险“等级）：单项报警级别，1联合判定低风险  2联合判定中风险"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "single_alarm_device_type_num",
+		"COLUMN_TYPE" : "int(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "上报该风险等级的设备类别数量"
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_alarm_synthesize_config",
+		"COLUMN_NAME" : "updator",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "修改人"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "姓名"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "gender",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "性别"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "company",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "公司"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "outsourcing_team",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "外包队伍名称"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "position",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "岗位"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "data_source",
+		"COLUMN_TYPE" : "tinyint(4)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据来源：1 系统录入  2 系统导入  3 风控接入"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "type",
+		"COLUMN_TYPE" : "tinyint(4)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员类别： 1在编人员   2外包人员"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "remark",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "北斗设备编号"
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_person",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "plan_code",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划编码"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划名称"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "scheduled_begin_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划开始时间"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "scheduled_end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划开始结束"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "actual_start_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际开始时间"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "actual_end_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "实际结束时间"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "corrdinate",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "作业位置坐标"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "数据同步时间"
+	},
+	{
+		"TABLE_NAME" : "zy_plan",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_device",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_device",
+		"COLUMN_NAME" : "plan_id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划id"
+	},
+	{
+		"TABLE_NAME" : "zy_plan_device",
+		"COLUMN_NAME" : "device_id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "设备id"
+	},
+	{
+		"TABLE_NAME" : "zy_plan_device",
+		"COLUMN_NAME" : "status",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "关系状态  KEEP保持   RELIEVE已接触"
+	},
+	{
+		"TABLE_NAME" : "zy_plan_device",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_device",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_org",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_org",
+		"COLUMN_NAME" : "org_isc_id",
+		"COLUMN_TYPE" : "varchar(255)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_org",
+		"COLUMN_NAME" : "name",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_org",
+		"COLUMN_NAME" : "plan_org_id",
+		"COLUMN_TYPE" : "varchar(100)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_org",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_org",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_person",
+		"COLUMN_NAME" : "id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "NO",
+		"COLUMN_KEY" : "PRI",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "auto_increment",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_person",
+		"COLUMN_NAME" : "plan_id",
+		"COLUMN_TYPE" : "bigint(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "计划id"
+	},
+	{
+		"TABLE_NAME" : "zy_plan_person",
+		"COLUMN_NAME" : "person_id",
+		"COLUMN_TYPE" : "varchar(30)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "MUL",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "人员id"
+	},
+	{
+		"TABLE_NAME" : "zy_plan_person",
+		"COLUMN_NAME" : "status",
+		"COLUMN_TYPE" : "varchar(20)",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : "关系状态  KEEP保持   RELIEVE已接触"
+	},
+	{
+		"TABLE_NAME" : "zy_plan_person",
+		"COLUMN_NAME" : "create_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	},
+	{
+		"TABLE_NAME" : "zy_plan_person",
+		"COLUMN_NAME" : "update_time",
+		"COLUMN_TYPE" : "datetime",
+		"IS_NULLABLE" : "YES",
+		"COLUMN_KEY" : "",
+		"COLUMN_DEFAULT" : null,
+		"EXTRA" : "",
+		"COLUMN_COMMENT" : ""
+	}
+]

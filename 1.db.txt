@@ -1,0 +1,2872 @@
+{
+"ads_prj_rjh_workplanday_di_code": {
+"columns": [
+{
+"name": "work_plan_id",
+"type": "varchar",
+"description": "作业计划ID"
+},
+{
+"name": "work_plan_code_day",
+"type": "varchar",
+"description": "计划编号"
+},
+{
+"name": "work_plan_name",
+"type": "text",
+"description": "计划名称"
+},
+{
+"name": "mainsend",
+"type": "varchar",
+"description": "报送单位"
+},
+{
+"name": "mainsend_id",
+"type": "varchar",
+"description": "报送单位ID"
+},
+{
+"name": "substation_name",
+"type": "varchar",
+"description": "变电站/线路名称"
+},
+{
+"name": "substation_id",
+"type": "varchar",
+"description": "变电站/线路ID"
+},
+{
+"name": "voltage_level",
+"type": "varchar",
+"description": "电压等级"
+},
+{
+"name": "work_type",
+"type": "varchar",
+"description": "作业类型"
+},
+{
+"name": "work_state",
+"type": "varchar",
+"description": "计划执行状态"
+},
+{
+"name": "power_cut",
+"type": "varchar",
+"description": "是否停电"
+},
+{
+"name": "live_work_flag",
+"type": "varchar",
+"description": "是否带电作业（01 是 02 否）"
+},
+{
+"name": "begin_time",
+"type": "datetime",
+"description": "计划开工时间"
+},
+{
+"name": "end_time",
+"type": "datetime",
+"description": "计划结束时间"
+},
+{
+"name": "workcontents",
+"type": "text",
+"description": "作业内容"
+},
+{
+"name": "work_place",
+"type": "varchar",
+"description": "作业地点"
+},
+{
+"name": "work_place_reference",
+"type": "varchar",
+"description": "重点参照物"
+},
+{
+"name": "longitude",
+"type": "varchar",
+"description": "经度"
+},
+{
+"name": "latitude",
+"type": "varchar",
+"description": "纬度"
+},
+{
+"name": "work_org",
+"type": "varchar",
+"description": "作业单位"
+},
+{
+"name": "work_org_id",
+"type": "varchar",
+"description": "作业单位ID"
+},
+{
+"name": "majorworker_num",
+"type": "varchar",
+"description": "主业单位作业人数"
+},
+{
+"name": "outworker_num",
+"type": "varchar",
+"description": "外包单位作业人数"
+},
+{
+"name": "industrialworker_num",
+"type": "varchar",
+"description": "产业单位作业人数"
+},
+{
+"name": "work_manager",
+"type": "varchar",
+"description": "工作负责人"
+},
+{
+"name": "work_manager_id",
+"type": "varchar",
+"description": "工作负责人ID"
+},
+{
+"name": "work_manager_contact",
+"type": "varchar",
+"description": "工作负责人联系方式"
+},
+{
+"name": "enter_people_name_province",
+"type": "varchar",
+"description": "省级到岗到位人员"
+},
+{
+"name": "enter_people_name_province_id",
+"type": "varchar",
+"description": "省级到岗到位人员ID"
+},
+{
+"name": "enter_people_name_city",
+"type": "varchar",
+"description": "市级到岗到位人员"
+},
+{
+"name": "enter_people_name_city_id",
+"type": "varchar",
+"description": "市级到岗到位人员ID"
+},
+{
+"name": "enter_people_name_county",
+"type": "varchar",
+"description": "县级到岗到位人员"
+},
+{
+"name": "enter_people_name_county_id",
+"type": "varchar",
+"description": "县级到岗到位人员ID"
+},
+{
+"name": "construction_org",
+"type": "varchar",
+"description": "施工单位"
+},
+{
+"name": "construction_org_id",
+"type": "varchar",
+"description": "施工单位ID"
+},
+{
+"name": "subcontract_org",
+"type": "varchar",
+"description": "分包单位"
+},
+{
+"name": "subcontract_nature",
+"type": "varchar",
+"description": "分包单位性质"
+},
+{
+"name": "subcontract_org_id",
+"type": "varchar",
+"description": "分包单位ID"
+},
+{
+"name": "supervisororg",
+"type": "varchar",
+"description": "监理单位"
+},
+{
+"name": "supervisororg_id",
+"type": "varchar",
+"description": "监理单位ID"
+},
+{
+"name": "workrisk_level",
+"type": "varchar",
+"description": "作业风险等级"
+},
+{
+"name": "gridrisk_level",
+"type": "varchar",
+"description": "电网风险等级"
+},
+{
+"name": "week_work_plan_id",
+"type": "varchar",
+"description": "关联周计划ID"
+},
+{
+"name": "project_name",
+"type": "varchar",
+"description": "项目名称"
+},
+{
+"name": "project_id",
+"type": "varchar",
+"description": "项目ID"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "创建时间"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "更新时间"
+},
+{
+"name": "datafill_org",
+"type": "varchar",
+"description": "数据填报单位"
+},
+{
+"name": "datafill_org_id",
+"type": "varchar",
+"description": "数据填报单位ID"
+},
+{
+"name": "datareport_org",
+"type": "varchar",
+"description": "数据上报单位"
+},
+{
+"name": "datareport_org_id",
+"type": "varchar",
+"description": "数据上报单位ID"
+},
+{
+"name": "datacommon_id",
+"type": "varchar",
+"description": "同一条数据公共ID"
+},
+{
+"name": "province_code",
+"type": "varchar",
+"description": "省编码"
+},
+{
+"name": "city_code",
+"type": "varchar",
+"description": "市编码"
+},
+{
+"name": "date_indexs",
+"type": "varchar",
+"description": "时间索引"
+},
+{
+"name": "inspect_manage_man_id",
+"type": "varchar",
+"description": "勘察负责人id"
+},
+{
+"name": "inspectman_id",
+"type": "varchar",
+"description": "勘察管理人id"
+},
+{
+"name": "survey_status",
+"type": "varchar",
+"description": "勘察状态"
+},
+{
+"name": "wrok_plan_type",
+"type": "varchar",
+"description": "计划来源"
+},
+{
+"name": "video_bond_time",
+"type": "varchar",
+"description": "布控球开机时间"
+},
+{
+"name": "is_temporary",
+"type": "char",
+"description": "是否临时抢修计划（0：临时抢修计划，1：日计划 ）"
+},
+{
+"name": "manage_dep",
+"type": "varchar",
+"description": "专业管理部门"
+},
+{
+"name": "cancel_reason",
+"type": "varchar",
+"description": "取消原因"
+},
+{
+"name": "supervise_type",
+"type": "varchar",
+"description": "是否督查"
+},
+{
+"name": "real_begin_time",
+"type": "datetime",
+"description": "实际开工时间"
+},
+{
+"name": "real_end_time",
+"type": "datetime",
+"description": "实际完工时间"
+},
+{
+"name": "title",
+"type": "varchar",
+"description": "工作票id"
+},
+{
+"name": "pw_work_type",
+"type": "varchar",
+"description": "配网作业类型"
+},
+{
+"name": "is_multi_contents",
+"type": "varchar",
+"description": "是否多地点作业"
+},
+{
+"name": "entr_time",
+"type": "time",
+"description": "入场时间"
+},
+{
+"name": "left_time",
+"type": "time",
+"description": "离场时间"
+},
+{
+"name": "point_code",
+"type": "varchar",
+"description": "坐标点"
+}
+],
+"description": ""
+}
+}
+------
+{
+"ai_uav_resource": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "uuid",
+"type": "varchar",
+"description": "id"
+},
+{
+"name": "type",
+"type": "tinyint",
+"description": "类型 1是工作现场 2 车辆 3 人员"
+},
+{
+"name": "coordinate",
+"type": "varchar",
+"description": "坐标"
+},
+{
+"name": "content",
+"type": "varchar",
+"description": "内容"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"bd_org": {
+"columns": [
+{
+"name": "isc_id",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "bmmc",
+"type": "varchar",
+"description": "部门名称"
+},
+{
+"name": "bmxz",
+"type": "varchar",
+"description": "部门性质"
+},
+{
+"name": "bmbm",
+"type": "varchar",
+"description": "部门编码"
+},
+{
+"name": "sjbm_id",
+"type": "varchar",
+"description": "上级部门id"
+},
+{
+"name": "xssx",
+"type": "int",
+"description": "显示顺序"
+},
+{
+"name": "cjsj",
+"type": "datetime",
+"description": "创建时间"
+},
+{
+"name": "tbsj",
+"type": "datetime",
+"description": "同步时间"
+},
+{
+"name": "cxsj",
+"type": "datetime",
+"description": "撤销时间"
+},
+{
+"name": "sfyx",
+"type": "int",
+"description": "数据有效性"
+},
+{
+"name": "ssws_id",
+"type": "varchar",
+"description": "所属网省id"
+},
+{
+"name": "ssds_id",
+"type": "varchar",
+"description": "所属地市id"
+},
+{
+"name": "ssgd_id",
+"type": "varchar",
+"description": "所属供电公司id"
+},
+{
+"name": "dwjb",
+"type": "varchar",
+"description": "单位级别"
+},
+{
+"name": "path",
+"type": "varchar",
+"description": "组织全路径"
+},
+{
+"name": "path_id",
+"type": "varchar",
+"description": "组织全路径id"
+},
+{
+"name": "ssywdw_id",
+"type": "varchar",
+"description": "所属运维单位id"
+},
+{
+"name": "zzjgqc",
+"type": "varchar",
+"description": "组织机构全称"
+},
+{
+"name": "sjbmmc",
+"type": "varchar",
+"description": "上级部门名称"
+},
+{
+"name": "sswsmc",
+"type": "varchar",
+"description": "所属网省名称"
+},
+{
+"name": "ssdsmc",
+"type": "varchar",
+"description": "所属地市名称"
+},
+{
+"name": "ssgdmc",
+"type": "varchar",
+"description": "所属供电公司名称"
+},
+{
+"name": "ssywdwmc",
+"type": "varchar",
+"description": "所属运维单位名称"
+},
+{
+"name": "sfcx",
+"type": "int",
+"description": "是否撤销"
+},
+{
+"name": "extend_field_update_time",
+"type": "datetime",
+"description": "从中台导出时间"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "创建时间"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "更新时间"
+},
+{
+"name": "extend_type",
+"type": "int",
+"description": "扩展类型，1 省公司信通审批处室  2 省公司数字化部审批处室  3 省公司专业部门审批处室  4 地市数字化专业部门审批处室  5 当前单位审批部门"
+}
+],
+"description": ""
+}
+}
+------
+{
+"bd_user": {
+"columns": [
+{
+"name": "isc_id",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "rymc",
+"type": "varchar",
+"description": "人员名称"
+},
+{
+"name": "ssbm_id",
+"type": "varchar",
+"description": "所属部门id"
+},
+{
+"name": "cjsj",
+"type": "varchar",
+"description": "创建时间"
+},
+{
+"name": "tbsj",
+"type": "varchar",
+"description": "同步时间"
+},
+{
+"name": "sfyx",
+"type": "varchar",
+"description": "数据有效性"
+},
+{
+"name": "ryxb",
+"type": "varchar",
+"description": "人员性别"
+},
+{
+"name": "ssdw_id",
+"type": "varchar",
+"description": "所属单位id"
+},
+{
+"name": "approver",
+"type": "int",
+"description": "是否具有审批权限：1 账号审批权限"
+},
+{
+"name": "login_name",
+"type": "varchar",
+"description": "人员登录名"
+},
+{
+"name": "login_password",
+"type": "varchar",
+"description": "登录密码"
+},
+{
+"name": "sftx",
+"type": "varchar",
+"description": "是否退休"
+},
+{
+"name": "extend_field_update_time",
+"type": "varchar",
+"description": "从中台导出时间"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "创建时间"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "更新时间"
+},
+{
+"name": "role",
+"type": "int",
+"description": "角色：1：超级管理员；2：普通角色"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_point": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "project",
+"type": "varchar",
+"description": "项目"
+},
+{
+"name": "longitude",
+"type": "double",
+"description": "经度"
+},
+{
+"name": "latitude",
+"type": "double",
+"description": "纬度"
+},
+{
+"name": "point_code",
+"type": "varchar",
+"description": "点位编码"
+},
+{
+"name": "remark",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "geo_point",
+"type": "point",
+"description": "坐标"
+},
+{
+"name": "sort",
+"type": "int",
+"description": "杆塔顺序"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_point_code": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "project",
+"type": "varchar",
+"description": "项目"
+},
+{
+"name": "point_code_",
+"type": "varchar",
+"description": "点位编码"
+},
+{
+"name": "project_code",
+"type": "varchar",
+"description": "包段编码"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_point_santongdao_bao12": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "name",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "o_lat",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "o_lng",
+"type": "double",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_point_uav_resource": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "uav_resource_id",
+"type": "varchar",
+"description": "无人机资源id"
+},
+{
+"name": "e_point_id",
+"type": "varchar",
+"description": "e基建原始坐标点位"
+},
+{
+"name": "plan_id",
+"type": "varchar",
+"description": "作业计划id"
+},
+{
+"name": "check_status",
+"type": "int",
+"description": "核查状态 0 未核查   1 已核查"
+},
+{
+"name": "risk_level",
+"type": "int",
+"description": "风险等级  风险等级 0无风险   1低风险   2中风险    3高风险"
+},
+{
+"name": "check_time",
+"type": "datetime",
+"description": "核查时间"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "check_remark",
+"type": "varchar",
+"description": "核查描述"
+},
+{
+"name": "data_resource",
+"type": "int",
+"description": "数据来源"
+},
+{
+"name": "ai_check_status",
+"type": "tinyint",
+"description": "核查状态 0 未核查   1 已核查"
+},
+{
+"name": "ai_risk_level",
+"type": "tinyint",
+"description": "风险等级  风险等级 0无风险   1低风险   2中风险    3高风险"
+},
+{
+"name": "is_ai",
+"type": "tinyint",
+"description": "是否ai"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_project": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "project_name",
+"type": "varchar",
+"description": "工程名称"
+},
+{
+"name": "project_name_bak",
+"type": "varchar",
+"description": "工程名称"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_project_bao_duan": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "e_project_name",
+"type": "varchar",
+"description": "工程名称"
+},
+{
+"name": "bao_duan",
+"type": "varchar",
+"description": "包段"
+},
+{
+"name": "project_baoduan",
+"type": "varchar",
+"description": "标段"
+},
+{
+"name": "code",
+"type": "varchar",
+"description": "人员编码或部门编码"
+}
+],
+"description": ""
+}
+}
+------
+{
+"e_team": {
+"columns": [
+{
+"name": "id",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "name",
+"type": "varchar",
+"description": "施工单位队伍名称"
+},
+{
+"name": "pid",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "charge",
+"type": "varchar",
+"description": "负责人"
+},
+{
+"name": "tel",
+"type": "varchar",
+"description": "电话"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "del_flag",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "bd",
+"type": "varchar",
+"description": "标段"
+},
+{
+"name": "station_info",
+"type": "varchar",
+"description": "驻地信息"
+},
+{
+"name": "station_longitude",
+"type": "varchar",
+"description": "驻地位置（经度）"
+},
+{
+"name": "station_latitude",
+"type": "varchar",
+"description": "驻地位置（纬度）"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sb_device": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "device_code",
+"type": "varchar",
+"description": "设备编码"
+},
+{
+"name": "name",
+"type": "varchar",
+"description": "设备名称"
+},
+{
+"name": "type",
+"type": "varchar",
+"description": "设备类型 01 车辆 02 人在感知 03 工器具"
+},
+{
+"name": "model",
+"type": "varchar",
+"description": "型号"
+},
+{
+"name": "org",
+"type": "varchar",
+"description": "所属单位"
+},
+{
+"name": "custodial_staff",
+"type": "varchar",
+"description": "保管人"
+},
+{
+"name": "custodial_staff_phone",
+"type": "varchar",
+"description": "保管人联系电话"
+},
+{
+"name": "status",
+"type": "varchar",
+"description": "设备状态"
+},
+{
+"name": "position_terminal_code",
+"type": "varchar",
+"description": "定位终端编号"
+},
+{
+"name": "position_terminal_type",
+"type": "varchar",
+"description": "定位终端类型"
+},
+{
+"name": "beidou_code",
+"type": "varchar",
+"description": "北斗卡号"
+},
+{
+"name": "support_position_upload",
+"type": "char",
+"description": "支持位置上报  Y支持   N不支持"
+},
+{
+"name": "support_short_message",
+"type": "char",
+"description": "支持短报文上报 Y支持  N不支持"
+},
+{
+"name": "remark",
+"type": "varchar",
+"description": "备注"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "e_point_id",
+"type": "int",
+"description": "所属标段id"
+},
+{
+"name": "contractor",
+"type": "varchar",
+"description": "施工单位"
+},
+{
+"name": "subcontractor",
+"type": "varchar",
+"description": "分包单位"
+},
+{
+"name": "license_plate",
+"type": "varchar",
+"description": "车牌号：如陕E968CY、川XN288N"
+},
+{
+"name": "vehicle_registration",
+"type": "varchar",
+"description": "行驶证文件地址"
+},
+{
+"name": "e_point_project",
+"type": "varchar",
+"description": "标段名"
+},
+{
+"name": "is_resident",
+"type": "tinyint",
+"description": "是否常驻"
+},
+{
+"name": "e_point_point_code",
+"type": "varchar",
+"description": "杆塔"
+},
+{
+"name": "work_plan_id",
+"type": "varchar",
+"description": "作业计划id"
+},
+{
+"name": "is_plan_id",
+"type": "tinyint",
+"description": "是否关联作业地点"
+},
+{
+"name": "picture",
+"type": "varchar",
+"description": "照片文件地址"
+}
+],
+"description": "设备信息表：车辆、人员穿戴、工器具等设备信息-运动轨迹"
+}
+}
+------
+{
+"sb_device_alarm_config": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "device_type",
+"type": "varchar",
+"description": "设备类型  01车辆  02人在感知  03工器具"
+},
+{
+"name": "device_code",
+"type": "varchar",
+"description": "设备编码"
+},
+{
+"name": "alarm_level",
+"type": "int",
+"description": "告警级别  1低风险   2中风险   3高风险"
+},
+{
+"name": "distance",
+"type": "int",
+"description": "距离"
+},
+{
+"name": "time_span",
+"type": "int",
+"description": "时间跨度,单位分钟"
+},
+{
+"name": "limit_val",
+"type": "int",
+"description": "限制次数"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "updator",
+"type": "varchar",
+"description": "修改人"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sb_device_attributes": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "device_id",
+"type": "bigint",
+"description": "设备id"
+},
+{
+"name": "attribute_name",
+"type": "varchar",
+"description": "属性名"
+},
+{
+"name": "attribute_value",
+"type": "varchar",
+"description": "属性值"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sb_position": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "device_code",
+"type": "varchar",
+"description": "设备编号"
+},
+{
+"name": "device_type",
+"type": "varchar",
+"description": "设备类型 01 车辆 02 人在感知 03 工器具"
+},
+{
+"name": "longitude",
+"type": "double",
+"description": "经度"
+},
+{
+"name": "latitude",
+"type": "double",
+"description": "纬度"
+},
+{
+"name": "altitude",
+"type": "double",
+"description": "高程"
+},
+{
+"name": "coordinate",
+"type": "varchar",
+"description": "坐标"
+},
+{
+"name": "trigger_time",
+"type": "datetime",
+"description": "触发时间"
+},
+{
+"name": "alarm_type",
+"type": "varchar",
+"description": "报警类型（探针报警含类型）"
+},
+{
+"name": "alarm_info",
+"type": "varchar",
+"description": "报警信息描述"
+},
+{
+"name": "remark",
+"type": "varchar",
+"description": "备注"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": "设备定位信息-运动轨迹"
+}
+}
+------
+{
+"sys_baoduan_code": {
+"columns": [
+{
+"name": "baoduan_id",
+"type": "int",
+"description": "包段id"
+},
+{
+"name": "code",
+"type": "varchar",
+"description": "人员编码或部门编码或公司编码"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sys_isc_org": {
+"columns": [
+{
+"name": "org_id",
+"type": "varchar",
+"description": "部门ID"
+},
+{
+"name": "org_name",
+"type": "varchar",
+"description": "部门名称"
+},
+{
+"name": "org_type",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "parent_id",
+"type": "varchar",
+"description": "上级部门ID"
+},
+{
+"name": "org_path",
+"type": "varchar",
+"description": "全路径部门Id"
+},
+{
+"name": "org_name_path",
+"type": "varchar",
+"description": "全路径部门名称"
+},
+{
+"name": "cms_org_no",
+"type": "varchar",
+"description": "营销机构编码"
+},
+{
+"name": "cms_org_name",
+"type": "varchar",
+"description": "营销机构编码名称"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sys_isc_user": {
+"columns": [
+{
+"name": "user_id",
+"type": "varchar",
+"description": "用户ID"
+},
+{
+"name": "baseorg_id",
+"type": "varchar",
+"description": "部门Id"
+},
+{
+"name": "username",
+"type": "varchar",
+"description": "用户名称"
+},
+{
+"name": "namecode",
+"type": "varchar",
+"description": "用户OA"
+},
+{
+"name": "title",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "org_name",
+"type": "varchar",
+"description": "部门名称"
+},
+{
+"name": "org_path",
+"type": "varchar",
+"description": "全路径id"
+},
+{
+"name": "org_name_path",
+"type": "varchar",
+"description": "全路径名称"
+},
+{
+"name": "parent_org_id",
+"type": "varchar",
+"description": "上级部门id"
+},
+{
+"name": "parent_org_name",
+"type": "varchar",
+"description": "上级部门名称"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sys_role": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "角色主键id"
+},
+{
+"name": "role",
+"type": "int",
+"description": "角色：1：超级管理员；2：普通角色"
+},
+{
+"name": "role_name",
+"type": "varchar",
+"description": "角色名称"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "创建时间"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "更新时间"
+}
+],
+"description": ""
+}
+}
+------
+{
+"sys_user_role": {
+"columns": [
+{
+"name": "user_id",
+"type": "varchar",
+"description": "人员编码"
+},
+{
+"name": "role_id",
+"type": "int",
+"description": "角色id"
+}
+],
+"description": ""
+}
+}
+------
+{
+"uav": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "address",
+"type": "varchar",
+"description": "位置"
+},
+{
+"name": "autopliot_sn",
+"type": "varchar",
+"description": "飞控编号"
+},
+{
+"name": "channel",
+"type": "varchar",
+"description": "通道"
+},
+{
+"name": "created_at",
+"type": "varchar",
+"description": "创建时间"
+},
+{
+"name": "custom_name",
+"type": "varchar",
+"description": "自定义名称"
+},
+{
+"name": "uav_id",
+"type": "bigint",
+"description": "id"
+},
+{
+"name": "is_update",
+"type": "tinyint",
+"description": "是否可更新"
+},
+{
+"name": "manufacturer",
+"type": "varchar",
+"description": "厂商"
+},
+{
+"name": "product_id",
+"type": "bigint",
+"description": "无人机对应更新飞控程序唯一标识"
+},
+{
+"name": "registration_no",
+"type": "varchar",
+"description": "无人机登记号"
+},
+{
+"name": "total_count",
+"type": "int",
+"description": "飞行总架次"
+},
+{
+"name": "type",
+"type": "varchar",
+"description": "类别"
+},
+{
+"name": "type_id",
+"type": "bigint",
+"description": "类别id"
+},
+{
+"name": "uav_fversion",
+"type": "varchar",
+"description": "无人机当前飞控版本"
+},
+{
+"name": "uav_model",
+"type": "varchar",
+"description": "型号"
+},
+{
+"name": "uav_model_id",
+"type": "bigint",
+"description": "型号id"
+},
+{
+"name": "uav_sn",
+"type": "varchar",
+"description": "编号"
+},
+{
+"name": "uav_state",
+"type": "int",
+"description": "无人机状态 0离线 1在线 2更新中"
+},
+{
+"name": "updated_at",
+"type": "varchar",
+"description": "更新时间"
+},
+{
+"name": "pic",
+"type": "varchar",
+"description": "照片"
+},
+{
+"name": "driver",
+"type": "varchar",
+"description": "飞手"
+},
+{
+"name": "tel",
+"type": "varchar",
+"description": "电话"
+},
+{
+"name": "data_recource",
+"type": "int",
+"description": "数据来源"
+},
+{
+"name": "spot",
+"type": "varchar",
+"description": "点位"
+},
+{
+"name": "binds",
+"type": "varchar",
+"description": "可巡飞标段"
+},
+{
+"name": "entry_at",
+"type": "datetime",
+"description": "进入系统时间"
+}
+],
+"description": ""
+}
+}
+------
+{
+"uav_flight_missions": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "mession_id",
+"type": "varchar",
+"description": "任务ID"
+},
+{
+"name": "e_point_point_code",
+"type": "varchar",
+"description": "e基建点位编号"
+},
+{
+"name": "e_point_project",
+"type": "varchar",
+"description": "e基建项目"
+},
+{
+"name": "alarm_id",
+"type": "int",
+"description": "告警id"
+},
+{
+"name": "work_plan_id",
+"type": "varchar",
+"description": "作业计划id"
+},
+{
+"name": "work_plan_name",
+"type": "text",
+"description": "作业名称"
+},
+{
+"name": "work_place",
+"type": "varchar",
+"description": "作业地点"
+},
+{
+"name": "task_person_name",
+"type": "varchar",
+"description": "任务下发人"
+},
+{
+"name": "task_status",
+"type": "tinyint",
+"description": "执行状态：1 待创建，2 待开始 3 执行中"
+},
+{
+"name": "longitude",
+"type": "double",
+"description": "经度"
+},
+{
+"name": "latitude",
+"type": "double",
+"description": "纬度"
+},
+{
+"name": "uav_resource_id",
+"type": "int",
+"description": "无人机资源id"
+},
+{
+"name": "check_status",
+"type": "tinyint",
+"description": "核查状态 0 待核查   1 已核查属实 2 已核查不属实"
+},
+{
+"name": "risk_level",
+"type": "tinyint",
+"description": "风险等级  风险等级 1无风险   2低风险   3中风险    4高风险"
+},
+{
+"name": "check_remark",
+"type": "varchar",
+"description": "核查描述"
+},
+{
+"name": "check_time",
+"type": "datetime",
+"description": "核查时间"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "mession_type",
+"type": "int",
+"description": "任务类型"
+},
+{
+"name": "mession_name",
+"type": "varchar",
+"description": "任务名称"
+},
+{
+"name": "plan_no",
+"type": "varchar",
+"description": "计划编号"
+},
+{
+"name": "plan_name",
+"type": "varchar",
+"description": "计划名称"
+},
+{
+"name": "plan_status",
+"type": "tinyint",
+"description": "计划状态"
+},
+{
+"name": "plan_state",
+"type": "tinyint",
+"description": "计划列表显示状态"
+},
+{
+"name": "plan_type",
+"type": "tinyint",
+"description": "任务类型"
+},
+{
+"name": "start_site_name",
+"type": "varchar",
+"description": "起飞机库名称"
+},
+{
+"name": "start_site_sn",
+"type": "varchar",
+"description": "起飞机库sn"
+},
+{
+"name": "land_site_name",
+"type": "varchar",
+"description": "降落机库名称"
+},
+{
+"name": "land_site_sn",
+"type": "varchar",
+"description": "降落机库sn"
+},
+{
+"name": "uav_type",
+"type": "tinyint",
+"description": "计划设备类型"
+},
+{
+"name": "uav_model_name",
+"type": "varchar",
+"description": "无人机型号"
+}
+],
+"description": ""
+}
+}
+------
+{
+"uav_plan": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "plan_no",
+"type": "varchar",
+"description": "计划编号"
+},
+{
+"name": "plan_name",
+"type": "varchar",
+"description": "计划名称"
+},
+{
+"name": "plan_status",
+"type": "tinyint",
+"description": "计划状态"
+},
+{
+"name": "plan_state",
+"type": "tinyint",
+"description": "计划列表显示状态"
+},
+{
+"name": "plan_type",
+"type": "tinyint",
+"description": "任务类型"
+},
+{
+"name": "start_site_name",
+"type": "varchar",
+"description": "起飞机库名称"
+},
+{
+"name": "start_site_sn",
+"type": "varchar",
+"description": "起飞机库名称"
+},
+{
+"name": "land_site_name",
+"type": "varchar",
+"description": "降落机库名称"
+},
+{
+"name": "land_site_sn",
+"type": "varchar",
+"description": "降落机库名称"
+},
+{
+"name": "uav_model_name",
+"type": "varchar",
+"description": "降落机库名称"
+},
+{
+"name": "uav_type",
+"type": "tinyint",
+"description": "计划设备类型"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"uav_resource": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "plan_no",
+"type": "varchar",
+"description": "任务编号"
+},
+{
+"name": "record_no",
+"type": "varchar",
+"description": "架次编号"
+},
+{
+"name": "file_type",
+"type": "varchar",
+"description": "文件类型"
+},
+{
+"name": "created_at",
+"type": "datetime",
+"description": "资源生成时间"
+},
+{
+"name": "file_name",
+"type": "varchar",
+"description": "文件名称"
+},
+{
+"name": "file_url",
+"type": "varchar",
+"description": "文件路径"
+},
+{
+"name": "file_id",
+"type": "varchar",
+"description": "文件id"
+},
+{
+"name": "longitude",
+"type": "double",
+"description": "经度"
+},
+{
+"name": "latitude",
+"type": "double",
+"description": "纬度"
+},
+{
+"name": "altitude",
+"type": "double",
+"description": "高度"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "geo_point",
+"type": "point",
+"description": "文件坐标"
+},
+{
+"name": "data_resource",
+"type": "int",
+"description": "数据来源"
+},
+{
+"name": "mession_id",
+"type": "varchar",
+"description": "任务ID"
+},
+{
+"name": "is_ai",
+"type": "tinyint",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"uav_site": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "address",
+"type": "varchar",
+"description": "位置"
+},
+{
+"name": "created_at",
+"type": "varchar",
+"description": "创建时间"
+},
+{
+"name": "custom_name",
+"type": "varchar",
+"description": "自定义名称"
+},
+{
+"name": "hangar_fversion",
+"type": "varchar",
+"description": "主控M1程序版本号"
+},
+{
+"name": "site_id",
+"type": "bigint",
+"description": "id"
+},
+{
+"name": "is_online",
+"type": "int",
+"description": "是否在线"
+},
+{
+"name": "is_update",
+"type": "tinyint",
+"description": "是否更新"
+},
+{
+"name": "manufacturer",
+"type": "varchar",
+"description": "厂商"
+},
+{
+"name": "site_model",
+"type": "varchar",
+"description": "型号"
+},
+{
+"name": "site_model_id",
+"type": "bigint",
+"description": "站点型号id"
+},
+{
+"name": "site_sn",
+"type": "varchar",
+"description": "编号"
+},
+{
+"name": "station_type",
+"type": "varchar",
+"description": "站点类型"
+},
+{
+"name": "type",
+"type": "varchar",
+"description": "类别"
+},
+{
+"name": "type_id",
+"type": "int",
+"description": "类别id"
+}
+],
+"description": ""
+}
+}
+------
+{
+"uav_telemetry": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "sn_id",
+"type": "varchar",
+"description": "飞控编号"
+},
+{
+"name": "is_connected",
+"type": "tinyint",
+"description": "true正常，false断连"
+},
+{
+"name": "warn_type",
+"type": "int",
+"description": "0无风险；1三级缓冲区（发现），2二级缓冲区（靠近），3一级缓冲区（抵达），4地面风险"
+},
+{
+"name": "nav_status",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "single_dual_link",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "time_stamp",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "uav_lat",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "uav_lon",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "uav_h_m_s_l",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "v_gnd",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "v_north",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "v_east",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "v_down",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "num_s_v",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "p_d_o_p",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "pos_type",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "t_a_s",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "r_p_m",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "left_r_p_m",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "right_r_p_m",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "throttle",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "uav_pitch",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "uav_yaw",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "uav_roll",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "main_power_v",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "main_power_a",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "ap_mode",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "photo_num",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "tracker",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "take_off",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "gps_heading",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "rtk_ext_sol_stat",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "flight_distance",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "cur_flight_time",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "assi_mode",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "rssi_status",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "sbus_status",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "uav_alt",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "tx",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "rx",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "mag_cali_status",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "lidar_forward_dist",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "lidar_downward_dist",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "lidar_left_dist",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "lidar_right_dist",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "lidar_back_dist",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "lidar_forward_state",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "lidar_downward_state",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "lidar_left_state",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "lidar_right_state",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "lidar_back_state",
+"type": "tinyint",
+"description": "NaN"
+},
+{
+"name": "cam_status",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "cam_depth",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "wind_speed",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "south_wind",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "west_wind",
+"type": "double",
+"description": "NaN"
+},
+{
+"name": "device_model1",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "device_model2",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "trigger_time",
+"type": "datetime",
+"description": "时间戳，由time_stamp格式化而来"
+}
+],
+"description": ""
+}
+}
+------
+{
+"weather_risk": {
+"columns": [
+{
+"name": "id",
+"type": "int unsigned",
+"description": "NaN"
+},
+{
+"name": "work_plan_id",
+"type": "varchar",
+"description": "作业计划id"
+},
+{
+"name": "work_plan_name",
+"type": "varchar",
+"description": "作业名称"
+},
+{
+"name": "work_contents",
+"type": "varchar",
+"description": "作业内容"
+},
+{
+"name": "work_state",
+"type": "varchar",
+"description": "作业状态"
+},
+{
+"name": "work_org",
+"type": "varchar",
+"description": "作业单位"
+},
+{
+"name": "work_org_id",
+"type": "varchar",
+"description": "作业单位id"
+},
+{
+"name": "longitude",
+"type": "double",
+"description": "作业经度"
+},
+{
+"name": "latitude",
+"type": "double",
+"description": "作业纬度"
+},
+{
+"name": "risk_type",
+"type": "varchar",
+"description": "风险类型"
+},
+{
+"name": "risk_type_name",
+"type": "varchar",
+"description": "风险类型名称"
+},
+{
+"name": "val",
+"type": "double",
+"description": "风险值"
+},
+{
+"name": "pre_time",
+"type": "datetime",
+"description": "风险开始时间"
+},
+{
+"name": "data_time",
+"type": "datetime",
+"description": "风险结束时间"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "construction_org_id",
+"type": "varchar",
+"description": "施工单位id"
+},
+{
+"name": "construction_org",
+"type": "varchar",
+"description": "施工单位"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_alarm": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "alarm_source",
+"type": "varchar",
+"description": "告警来源：DW_DEVICE（定位设备监测）XS_UAV（无人机巡视）"
+},
+{
+"name": "device_code",
+"type": "varchar",
+"description": "告警来源为DW_DEVICE时，存设备编码；告警来源为XS_UAV时，存资源ID"
+},
+{
+"name": "begin_time",
+"type": "datetime",
+"description": "开始时间（发生时间）"
+},
+{
+"name": "end_time",
+"type": "datetime",
+"description": ""
+},
+{
+"name": "e_point_id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "e_point_code",
+"type": "varchar",
+"description": "e基建点位code"
+},
+{
+"name": "project_name",
+"type": "varchar",
+"description": "项目名称，如西安东-安康750千伏线路工程/包1西安蓝田段"
+},
+{
+"name": "alarm_level",
+"type": "int",
+"description": "报警等级 1 低风险   2 中风险   3 高风险"
+},
+{
+"name": "check_status",
+"type": "int",
+"description": "核查状态：0 未核查（初始默认）   1 已核查属实     2 已核查不属实"
+},
+{
+"name": "check_remark",
+"type": "varchar",
+"description": "核查备注"
+},
+{
+"name": "check_time",
+"type": "datetime",
+"description": "核查时间"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": "作业告警表: 风险作业数据"
+}
+}
+------
+{
+"zy_alarm_config": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "device_type",
+"type": "varchar",
+"description": "设备类型  01车辆  02人在感知  03工器具"
+},
+{
+"name": "alarm_level",
+"type": "varchar",
+"description": "告警级别  1低风险   2中风险   3高风险"
+},
+{
+"name": "distance",
+"type": "int",
+"description": "距离"
+},
+{
+"name": "time_span",
+"type": "int",
+"description": "时间跨度,单位分钟"
+},
+{
+"name": "limit_val",
+"type": "int",
+"description": "限制次数"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "updator",
+"type": "varchar",
+"description": "修改者"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_alarm_sigle_point": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "device_code",
+"type": "varchar",
+"description": "设备编号"
+},
+{
+"name": "device_type",
+"type": "varchar",
+"description": "设备类型"
+},
+{
+"name": "begin_time",
+"type": "datetime",
+"description": "开始时间"
+},
+{
+"name": "end_time",
+"type": "datetime",
+"description": "结束时间"
+},
+{
+"name": "e_point_id",
+"type": "int",
+"description": "作业点id"
+},
+{
+"name": "e_point_code",
+"type": "varchar",
+"description": "作业点code"
+},
+{
+"name": "project_name",
+"type": "varchar",
+"description": "项目名称"
+},
+{
+"name": "alarm_level",
+"type": "int",
+"description": "告警级别"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_alarm_synthesize_config": {
+"columns": [
+{
+"name": "id",
+"type": "int",
+"description": "NaN"
+},
+{
+"name": "alarm_level",
+"type": "int",
+"description": "告警级别  1低风险   2中风险   3高风险"
+},
+{
+"name": "time_span",
+"type": "int",
+"description": "时间跨度，单位分钟"
+},
+{
+"name": "single_alarm_level",
+"type": "int",
+"description": "判定目标（由几种设备类型报的某一种风险，字段定义检查的”风险“等级）：单项报警级别，1联合判定低风险  2联合判定中风险"
+},
+{
+"name": "single_alarm_device_type_num",
+"type": "int",
+"description": "上报该风险等级的设备类别数量"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "updator",
+"type": "varchar",
+"description": "修改人"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_person": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "name",
+"type": "varchar",
+"description": "姓名"
+},
+{
+"name": "gender",
+"type": "varchar",
+"description": "性别"
+},
+{
+"name": "company",
+"type": "varchar",
+"description": "公司"
+},
+{
+"name": "outsourcing_team",
+"type": "varchar",
+"description": "外包队伍名称"
+},
+{
+"name": "position",
+"type": "varchar",
+"description": "岗位"
+},
+{
+"name": "data_source",
+"type": "tinyint",
+"description": "数据来源：1 系统录入  2 系统导入  3 风控接入"
+},
+{
+"name": "type",
+"type": "tinyint",
+"description": "人员类别： 1在编人员   2外包人员"
+},
+{
+"name": "remark",
+"type": "varchar",
+"description": "北斗设备编号"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_plan": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "plan_code",
+"type": "varchar",
+"description": "计划编码"
+},
+{
+"name": "name",
+"type": "varchar",
+"description": "计划名称"
+},
+{
+"name": "scheduled_begin_time",
+"type": "datetime",
+"description": "计划开始时间"
+},
+{
+"name": "scheduled_end_time",
+"type": "datetime",
+"description": "计划开始结束"
+},
+{
+"name": "actual_start_time",
+"type": "datetime",
+"description": "实际开始时间"
+},
+{
+"name": "actual_end_time",
+"type": "datetime",
+"description": "实际结束时间"
+},
+{
+"name": "corrdinate",
+"type": "varchar",
+"description": "作业位置坐标"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "数据同步时间"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_plan_device": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "plan_id",
+"type": "bigint",
+"description": "计划id"
+},
+{
+"name": "device_id",
+"type": "bigint",
+"description": "设备id"
+},
+{
+"name": "status",
+"type": "varchar",
+"description": "关系状态  KEEP保持   RELIEVE已接触"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_plan_org": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "org_isc_id",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "name",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "plan_org_id",
+"type": "varchar",
+"description": "NaN"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}
+------
+{
+"zy_plan_person": {
+"columns": [
+{
+"name": "id",
+"type": "bigint",
+"description": "NaN"
+},
+{
+"name": "plan_id",
+"type": "bigint",
+"description": "计划id"
+},
+{
+"name": "person_id",
+"type": "varchar",
+"description": "人员id"
+},
+{
+"name": "status",
+"type": "varchar",
+"description": "关系状态  KEEP保持   RELIEVE已接触"
+},
+{
+"name": "create_time",
+"type": "datetime",
+"description": "NaN"
+},
+{
+"name": "update_time",
+"type": "datetime",
+"description": "NaN"
+}
+],
+"description": ""
+}
+}

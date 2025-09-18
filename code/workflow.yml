@@ -1,0 +1,2342 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: advanced-chat
+  name: 基建0524_v4
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/ollama:0.0.6@7d66a960a68cafdcdf5589fdf5d01a995533f956853c69c54eddcf797006fa37
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: junjiem/db_query:0.0.7@4f9d2a23ee55c9548b235b33af3c5e27c7ec8ba28de975e6a060f450485c2911
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/echarts:0.0.1@fe95412f101f2735530ea05f479ab5e8fbe1d4f4b2847f09e490e7d1d0125de5
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/tongyi:0.0.21@cb32d252bc1ebc61437c9134e22db2be5ccdd48223e08b9ea0deff4f0df0a187
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/gpustack:0.0.8@8fe1abce0914a80dab12caa46da58a5378ae2d214087d65340cbc4111ed669c5
+kind: app
+version: 0.3.1
+workflow:
+  conversation_variables: []
+  environment_variables:
+  - description: ''
+    id: bea91225-ce13-4632-91e3-91b7f42f0e04
+    name: DB_NAME2
+    selector:
+    - env
+    - DB_NAME2
+    value: snsj_app_server_anquanyujing
+    value_type: string
+  - description: ''
+    id: 7b4d2392-4c2c-4af0-b357-eff66b2f11eb
+    name: DB_USER2
+    selector:
+    - env
+    - DB_USER2
+    value: root
+    value_type: string
+  - description: ''
+    id: 0cc86c09-3bc9-4a73-8ca7-b78e2c9cc15d
+    name: DB_PASSWORD2
+    selector:
+    - env
+    - DB_PASSWORD2
+    value: '!qazxsw@2129,'
+    value_type: string
+  - description: ''
+    id: 7dba2200-4aa5-4a82-acea-1388675a1efa
+    name: DB_ADDR2
+    selector:
+    - env
+    - DB_ADDR2
+    value: rbdns.zapto.org
+    value_type: string
+  - description: ''
+    id: 0d212416-8b90-4c57-b93c-d44dac38c9dc
+    name: DB_NAME
+    selector:
+    - env
+    - DB_NAME
+    value: test
+    value_type: string
+  - description: ''
+    id: e16c3af6-89a3-420b-bf49-531db0adbdcf
+    name: DB_PASSWORD
+    selector:
+    - env
+    - DB_PASSWORD
+    value: my-secret-pw
+    value_type: string
+  - description: ''
+    id: 882b867c-ef62-4b85-87f2-4b87b4b9d9e8
+    name: DB_USER
+    selector:
+    - env
+    - DB_USER
+    value: root
+    value_type: string
+  - description: ''
+    id: d1245b4a-07ba-4f57-81e7-968278fdb5c0
+    name: DB_ADDR
+    selector:
+    - env
+    - DB_ADDR
+    value: 192.168.190.80
+    value_type: string
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: knowledge-retrieval
+      id: 1747725005596-source-1747725202374-target
+      selected: false
+      source: '1747725005596'
+      sourceHandle: source
+      target: '1747725202374'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1747725202374--1747725311599-target
+      selected: false
+      source: '1747725202374'
+      sourceHandle: source
+      target: '1747725311599'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1747725311599-source-1747751818180-target
+      selected: false
+      source: '1747725311599'
+      sourceHandle: source
+      target: '1747751818180'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+      id: 1747751818180-source-1747752928210-target
+      selected: false
+      source: '1747751818180'
+      sourceHandle: source
+      target: '1747752928210'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1747841498631-true-1747813580715-target
+      selected: false
+      source: '1747841498631'
+      sourceHandle: 'true'
+      target: '1747813580715'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1747841498631-9ad98e85-20c2-4589-af7f-7a7bf305d2e2-1747841365853-target
+      selected: false
+      source: '1747841498631'
+      sourceHandle: 9ad98e85-20c2-4589-af7f-7a7bf305d2e2
+      target: '1747841365853'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1747841498631-b6bba3b4-d2c8-4bd7-848a-65e0092964c6-1747841371449-target
+      selected: false
+      source: '1747841498631'
+      sourceHandle: b6bba3b4-d2c8-4bd7-848a-65e0092964c6
+      target: '1747841371449'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1747813580715-source-1747841753120-target
+      selected: false
+      source: '1747813580715'
+      sourceHandle: source
+      target: '1747841753120'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1747841753120-source-1747841769222-target
+      selected: false
+      source: '1747841753120'
+      sourceHandle: source
+      target: '1747841769222'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1747841365853-source-17478778952540-target
+      selected: false
+      source: '1747841365853'
+      sourceHandle: source
+      target: '17478778952540'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1747841371449-source-17478779274600-target
+      selected: false
+      source: '1747841371449'
+      sourceHandle: source
+      target: '17478779274600'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 17478778952540-source-17478779734590-target
+      selected: false
+      source: '17478778952540'
+      sourceHandle: source
+      target: '17478779734590'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 17478779274600-source-17478780555980-target
+      selected: false
+      source: '17478779274600'
+      sourceHandle: source
+      target: '17478780555980'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1747907978796-b9de981d-33a1-47fc-b9a7-c455f659f2cb-17479081800800-target
+      selected: false
+      source: '1747907978796'
+      sourceHandle: b9de981d-33a1-47fc-b9a7-c455f659f2cb
+      target: '17479081800800'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 17479081800800-source-1747908292502-target
+      selected: false
+      source: '17479081800800'
+      sourceHandle: source
+      target: '1747908292502'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: template-transform
+      id: 1747752928210-source-1747814091755-target
+      selected: false
+      source: '1747752928210'
+      sourceHandle: source
+      target: '1747814091755'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: if-else
+      id: 1747907776898-source-1747907978796-target
+      selected: false
+      source: '1747907776898'
+      sourceHandle: source
+      target: '1747907978796'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 1747907978796-false-1747910108539-target
+      selected: false
+      source: '1747907978796'
+      sourceHandle: 'false'
+      target: '1747910108539'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: template-transform
+        targetType: if-else
+      id: 1747814091755-source-1747987320346-target
+      source: '1747814091755'
+      sourceHandle: source
+      target: '1747987320346'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1747987320346-true-1747987368698-target
+      source: '1747987320346'
+      sourceHandle: 'true'
+      target: '1747987368698'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1747987320346-false-1747907776898-target
+      source: '1747987320346'
+      sourceHandle: 'false'
+      target: '1747907776898'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1747987368698-source-1747996238797-target
+      source: '1747987368698'
+      sourceHandle: source
+      target: '1747996238797'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: answer
+      id: 1747752928210-fail-branch-1747998392408-target
+      source: '1747752928210'
+      sourceHandle: fail-branch
+      target: '1747998392408'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1747987368698-fail-branch-1747998467066-target
+      source: '1747987368698'
+      sourceHandle: fail-branch
+      target: '1747998467066'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 1747987320346-831e9b1d-8a8a-44f4-8a89-cb71a68096d0-1749177133063-target
+      source: '1747987320346'
+      sourceHandle: 831e9b1d-8a8a-44f4-8a89-cb71a68096d0
+      target: '1749177133063'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1747907978796-true-1749990827866-target
+      source: '1747907978796'
+      sourceHandle: 'true'
+      target: '1749990827866'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1747841498631-false-17499920264110-target
+      selected: false
+      source: '1747841498631'
+      sourceHandle: 'false'
+      target: '17499920264110'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 17499920264110-source-1749992103021-target
+      source: '17499920264110'
+      sourceHandle: source
+      target: '1749992103021'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: if-else
+      id: 1749990827866-source-1747841498631-target
+      source: '1749990827866'
+      sourceHandle: source
+      target: '1747841498631'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1747813580715-fail-branch-17499920264110-target
+      source: '1747813580715'
+      sourceHandle: fail-branch
+      target: '17499920264110'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1747841365853-fail-branch-17499920264110-target
+      source: '1747841365853'
+      sourceHandle: fail-branch
+      target: '17499920264110'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1747841371449-fail-branch-17499920264110-target
+      source: '1747841371449'
+      sourceHandle: fail-branch
+      target: '17499920264110'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1747725311599-fail-branch-1747998431868-target
+      source: '1747725311599'
+      sourceHandle: fail-branch
+      target: '1747998431868'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables: []
+      height: 54
+      id: '1747725005596'
+      position:
+        x: 30
+        y: 362.5
+      positionAbsolute:
+        x: 30
+        y: 362.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - 7uEkUpiF1iImw9oXx++uDOzVmWOIGZl4IzfXEBkyuwdyj2/roWB1PlE8FbA4JEY5
+        - Jit4z5GPop/013u7VK+/08VRDhCmMQ2XEZTSLUH2CmSCC5xZgrf/fgsJfI2uhob/
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: reranking_model
+          reranking_model:
+            model: gte-rerank
+            provider: langgenius/tongyi/tongyi
+          score_threshold: null
+          top_k: 10
+          weights:
+            keyword_setting:
+              keyword_weight: 0.5
+            vector_setting:
+              embedding_model_name: quentinz/bge-large-zh-v1.5:latest
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.5
+        query_variable_selector:
+        - sys
+        - query
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索
+        type: knowledge-retrieval
+      height: 120
+      id: '1747725202374'
+      position:
+        x: 335.6132707507734
+        y: 362.5
+      positionAbsolute:
+        x: 335.6132707507734
+        y: 362.5
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1747725202374'
+          - result
+        desc: ''
+        error_strategy: fail-branch
+        model:
+          completion_params:
+            temperature: 0.7
+            top_p: 0
+          mode: chat
+          name: DeepSeek-R1-Distill-Qwen-32B-Q8
+          provider: langgenius/gpustack/gpustack
+        prompt_template:
+        - edition_type: basic
+          id: fc41ea04-402d-4f07-88f3-57e959b440c2
+          role: system
+          text: '【角色设定】
+
+            您是一位精通SQL语言的数据库专家，熟悉MySQL数据库。擅长根据历史用户问题sql对及库表结构将自然语言精准转换为符合规范的SQL语句。
+
+
+            【输入处理流程】
+
+            1. 历史问题：查看是否有相似/相同的用户问题（查看和统计含义相同），有的话直接返回对应sql语句即可，**无需考虑任何问题(无需任何思考)**
+
+            2. 结构确认：根据用户的查询需求，确定涉及的表和字段，检查字段名是否准确及其含义作用
+
+            3. 关联分析：能准确识别业务需求中的隐藏条件，确认多表关联时的连接条件是否正确
+
+            4. 条件推导：深入理解当前业务系统的表结构，将模糊的业务描述转化为精确的WHERE条件
+
+            5. 异常处理：识别可能存在的逻辑矛盾或性能陷阱
+
+            6. 约束判断：如果用户的问题查的是**轨迹**信息，则只输出一条，限定limit=1
+
+            7.删除回答中额外的解释信息
+
+
+            【关键技巧】
+
+            - WHERE 子句：用于过滤数据，例如，WHERE column_name="value"。
+
+            - **日期处理：**使用''STR_TO_DATE''函数将字符串转换为日期类型，例如，''STR_TO_DATE(''2025-03-14'',
+            ''%Y-%m-%d'')''，同时若问某一天，则处理如下STR_TO_DATE(CONCAT(''2025-03-14'', '' 00:00:00''),
+            ''%Y-%m-%d %H:%i:%s'') AND  STR_TO_DATE(CONCAT(''2025-03-14'', '' 23:59:59''),
+            ''%Y-%m-%d %H:%i:%s'')。
+
+            - **聚合函数：**如’COUNT‘、‘SUM''、''AVG''等，用于计算汇总计算。
+
+            - **除法处理：**在进行除法处理时，需要考虑除数为零的情况，避免错误。
+
+            - **日期范围示例：**查询特定日期范围的数据时，使用''BETWEEN''关键字，例如，''WHERE data_column'' BETWEEN
+            ''2025-01-01'' AND ''2025-12-31''。
+
+            - **时间范围约束：** 若用户问题中包含“当前”“今天”“本周”“本月”“最近”“近几天”等词语，应自动解析为相应的时间区间，并在 SQL
+            中体现为对应的日期范围筛选逻辑（如：最近7天 → CURDATE() - INTERVAL 7 DAY；当前(当前发生)统一按今天处理→CURDATE()
+            - INTERVAL 1 DAY）
+
+
+            【输出要求】
+
+            1.确保SQL语句的语法符合MySQL的规范
+
+            2. 输出的SQL语句必须完整且可行的，不包含注释或多余的换行符
+
+            3.如果用户的问题查的是**轨迹**信息，则只输出一条，限定limit=1
+
+            4.如果用户的问题查的是某包段今日或者当前的不同风险等级作业数据时或者统计今日的无计划高风险数量时，无论用户是否要统计最近，输出的sql语句都要**按等级的不同统计不同设备的数量**，如SELECT
+            alarm_level,COUNT(*) FROM zy_alarm_statistical_view WHERE begin_time >=
+            CURDATE() AND end_time < CURDATE() + INTERVAL 1 DAY GROUP BY  alarm_level
+            ORDER BY  alarm_level DESC;
+
+            4.统计今日的风险作业数量，直接给出sql:SELECT alarm_level,COUNT(*) FROM zy_alarm_statistical_view
+            WHERE begin_time >= CURDATE() AND end_time < CURDATE() + INTERVAL 1 DAY
+            GROUP BY  alarm_level ORDER BY  alarm_level DESC;
+
+            5.直接给出能够使用的sql语句即可，无需额外解释信息！！！
+
+            6.不要解释信息！！！
+
+            '
+        - edition_type: basic
+          id: 17dc25d9-4583-4fe1-8c0c-bebaf12803ad
+          role: user
+          text: '数据库相关结构信息：
+
+            {{#context#}}
+
+            问题：{{#sys.query#}}
+
+            '
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        structured_output_enabled: false
+        title: 生成SQL(基于LLM)
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 156
+      id: '1747725311599'
+      position:
+        x: 625.9045717600183
+        y: 362.5
+      positionAbsolute:
+        x: 625.9045717600183
+        y: 362.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "import re\ndef main(arg: str):\n    match = re.search(r'</think>\\\
+          s*\\n?(.*)',arg,re.DOTALL)\n    if match:\n        sql = match.group(1).strip()\n\
+          \        # 去除 markdown 的 ```sql 和 ``` 标签\n        sql = re.sub(r\"^```sql\\\
+          s*\", \"\", sql)\n        sql = re.sub(r\"\\s*```$\", \"\", sql)\n     \
+          \   # # 转为单行 SQL\n        single_line_sql = ' '.join(sql.split())\n    \
+          \    return {\n            \"result\": single_line_sql\n        }\n    return\
+          \ ''"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: SQL提取（代码）
+        type: code
+        variables:
+        - value_selector:
+          - '1747725311599'
+          - text
+          variable: arg
+      height: 54
+      id: '1747751818180'
+      position:
+        x: 942
+        y: 362.5
+      positionAbsolute:
+        x: 942
+        y: 362.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        error_strategy: fail-branch
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: mysql
+          form: llm
+          human_description:
+            en_US: Used for selecting the database type, mysql, oracle, postgresql
+              or mssql.
+            ja_JP: Used for selecting the database type, mysql, oracle, postgresql
+              or mssql.
+            pt_BR: Used for selecting the database type, mysql, oracle, postgresql
+              or mssql.
+            zh_Hans: 用于选择数据库类型，mysql、oracle、postgresql或mssql。
+          label:
+            en_US: Database type
+            ja_JP: Database type
+            pt_BR: Database type
+            zh_Hans: 数据库类型
+          llm_description: ''
+          max: null
+          min: null
+          name: db_type
+          options:
+          - label:
+              en_US: MySQL
+              ja_JP: MySQL
+              pt_BR: MySQL
+              zh_Hans: MySQL
+            value: mysql
+          - label:
+              en_US: Oracle
+              ja_JP: Oracle
+              pt_BR: Oracle
+              zh_Hans: Oracle
+            value: oracle
+          - label:
+              en_US: PostgreSQL
+              ja_JP: PostgreSQL
+              pt_BR: PostgreSQL
+              zh_Hans: PostgreSQL
+            value: postgresql
+          - label:
+              en_US: Microsoft SQL Server
+              ja_JP: Microsoft SQL Server
+              pt_BR: Microsoft SQL Server
+              zh_Hans: Microsoft SQL Server
+            value: mssql
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        - auto_generate: null
+          default: localhost
+          form: llm
+          human_description:
+            en_US: Database hostname or IP address (Original string, not URL-encoded
+              string).
+            ja_JP: Database hostname or IP address (Original string, not URL-encoded
+              string).
+            pt_BR: Database hostname or IP address (Original string, not URL-encoded
+              string).
+            zh_Hans: 数据库的主机名或IP地址（原始字符串，非URL编码字符串）。
+          label:
+            en_US: Database Host
+            ja_JP: Database Host
+            pt_BR: Database Host
+            zh_Hans: 数据库地址
+          llm_description: ''
+          max: null
+          min: null
+          name: db_host
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Database port.
+            ja_JP: Database port.
+            pt_BR: Database port.
+            zh_Hans: 数据库的端口。
+          label:
+            en_US: Port
+            ja_JP: Port
+            pt_BR: Port
+            zh_Hans: 端口
+          llm_description: ''
+          max: null
+          min: null
+          name: db_port
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: number
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Database username (Original string, not URL-encoded string).
+            ja_JP: Database username (Original string, not URL-encoded string).
+            pt_BR: Database username (Original string, not URL-encoded string).
+            zh_Hans: 数据库的用户名（原始字符串，非URL编码字符串）。
+          label:
+            en_US: Username
+            ja_JP: Username
+            pt_BR: Username
+            zh_Hans: 用户名
+          llm_description: ''
+          max: null
+          min: null
+          name: db_username
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Database password (Original string, not URL-encoded string).
+            ja_JP: Database password (Original string, not URL-encoded string).
+            pt_BR: Database password (Original string, not URL-encoded string).
+            zh_Hans: 数据库的密码（原始字符串，非URL编码字符串）。
+          label:
+            en_US: Password
+            ja_JP: Password
+            pt_BR: Password
+            zh_Hans: 密码
+          llm_description: ''
+          max: null
+          min: null
+          name: db_password
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Database name (Original string, not URL-encoded string).
+            ja_JP: Database name (Original string, not URL-encoded string).
+            pt_BR: Database name (Original string, not URL-encoded string).
+            zh_Hans: 数据库的名称（原始字符串，非URL编码字符串）。
+          label:
+            en_US: Database name
+            ja_JP: Database name
+            pt_BR: Database name
+            zh_Hans: 库名
+          llm_description: ''
+          max: null
+          min: null
+          name: db_name
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: 'Database properties, for example: alt_host=host1&alt_host=host2&ssl_cipher=%2Fpath%2Fto%2Fcrt'
+            ja_JP: 'Database properties, for example: alt_host=host1&alt_host=host2&ssl_cipher=%2Fpath%2Fto%2Fcrt'
+            pt_BR: 'Database properties, for example: alt_host=host1&alt_host=host2&ssl_cipher=%2Fpath%2Fto%2Fcrt'
+            zh_Hans: 数据库属性，例如：alt_host=host1&alt_host=host2&ssl_cipher=%2Fpath%2Fto%2Fcrt
+          label:
+            en_US: Database properties
+            ja_JP: Database properties
+            pt_BR: Database properties
+            zh_Hans: 数据库属性
+          llm_description: ''
+          max: null
+          min: null
+          name: db_properties
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: 'SQL query statement, for example: select * from tbl_name'
+            ja_JP: 'SQL query statement, for example: select * from tbl_name'
+            pt_BR: 'SQL query statement, for example: select * from tbl_name'
+            zh_Hans: SQL查询语句，例如：select * from tbl_name
+          label:
+            en_US: Query SQL
+            ja_JP: Query SQL
+            pt_BR: Query SQL
+            zh_Hans: SQL查询语句
+          llm_description: 'SQL query statement, for example: select * from tbl_name'
+          max: null
+          min: null
+          name: query_sql
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: markdown
+          form: form
+          human_description:
+            en_US: Used for selecting the output format, markdown or json.
+            ja_JP: Used for selecting the output format, markdown or json.
+            pt_BR: Used for selecting the output format, markdown or json.
+            zh_Hans: 用于选择输出格式，markdown或json。
+          label:
+            en_US: Output format
+            ja_JP: Output format
+            pt_BR: Output format
+            zh_Hans: 输出格式
+          llm_description: ''
+          max: null
+          min: null
+          name: output_format
+          options:
+          - label:
+              en_US: MARKDOWN
+              ja_JP: MARKDOWN
+              pt_BR: MARKDOWN
+              zh_Hans: MARKDOWN
+            value: markdown
+          - label:
+              en_US: JSON
+              ja_JP: JSON
+              pt_BR: JSON
+              zh_Hans: JSON
+            value: json
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          db_host: ''
+          db_name: ''
+          db_password: ''
+          db_port: ''
+          db_properties: ''
+          db_type: ''
+          db_username: ''
+          output_format: ''
+          query_sql: ''
+        provider_id: junjiem/db_query/db_query
+        provider_name: junjiem/db_query/db_query
+        provider_type: builtin
+        retry_config:
+          max_retries: 3
+          retry_enabled: false
+          retry_interval: 1000
+        selected: false
+        title: SQL查询
+        tool_configurations:
+          output_format:
+            type: constant
+            value: json
+        tool_description: 数据库SQL查询工具。
+        tool_label: SQL查询
+        tool_name: sql_query
+        tool_node_version: '2'
+        tool_parameters:
+          db_host:
+            type: mixed
+            value: '{{#env.DB_ADDR2#}}'
+          db_name:
+            type: mixed
+            value: '{{#env.DB_NAME2#}}'
+          db_password:
+            type: mixed
+            value: '{{#env.DB_PASSWORD2#}}'
+          db_port:
+            type: constant
+            value: 13306
+          db_properties:
+            type: mixed
+            value: ''
+          db_type:
+            type: constant
+            value: mysql
+          db_username:
+            type: mixed
+            value: '{{#env.DB_USER2#}}'
+          query_sql:
+            type: mixed
+            value: '{{#1747751818180.result#}}'
+        type: tool
+      height: 126
+      id: '1747752928210'
+      position:
+        x: 1246
+        y: 362.5
+      positionAbsolute:
+        x: 1246
+        y: 362.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        error_strategy: fail-branch
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: chart title
+            ja_JP: chart title
+            pt_BR: chart title
+            zh_Hans: 图表的标题
+          label:
+            en_US: title
+            ja_JP: title
+            pt_BR: title
+            zh_Hans: 标题
+          llm_description: chart title
+          max: null
+          min: null
+          name: title
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: data for generating chart, each number should be separated by ";"
+            ja_JP: data for generating chart, each number should be separated by ";"
+            pt_BR: data for generating chart, each number should be separated by ";"
+            zh_Hans: 用于生成柱状图的数据，每个数字之间用 ";" 分隔
+          label:
+            en_US: data
+            ja_JP: data
+            pt_BR: data
+            zh_Hans: 数据
+          llm_description: data for generating bar chart, data should be a string
+            contains a list of numbers like "1;2;3;4;5"
+          max: null
+          min: null
+          name: data
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: X axis for chart, each text should be separated by ";"
+            ja_JP: X axis for chart, each text should be separated by ";"
+            pt_BR: X axis for chart, each text should be separated by ";"
+            zh_Hans: 柱状图的 x 轴，每个文本之间用 ";" 分隔
+          label:
+            en_US: X Axis
+            ja_JP: X Axis
+            pt_BR: X Axis
+            zh_Hans: x 轴
+          llm_description: x axis for bar chart, x axis should be a string contains
+            a list of texts like "a;b;c;1;2" in order to match the data
+          max: null
+          min: null
+          name: x_axis
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          data: ''
+          title: ''
+          x_axis: ''
+        provider_id: langgenius/echarts/echarts
+        provider_name: langgenius/echarts/echarts
+        provider_type: builtin
+        selected: false
+        title: 柱状图
+        tool_configurations: {}
+        tool_description: 柱状图
+        tool_label: 柱状图
+        tool_name: bar_chart
+        tool_node_version: '2'
+        tool_parameters:
+          data:
+            type: mixed
+            value: '{{#1749990827866.structured_output.data#}}'
+          title:
+            type: mixed
+            value: '{{#1749990827866.structured_output.title#}}'
+          x_axis:
+            type: mixed
+            value: '{{#1749990827866.structured_output.xdata#}}'
+        type: tool
+      height: 90
+      id: '1747813580715'
+      position:
+        x: 3374
+        y: 284.3091118376402
+      positionAbsolute:
+        x: 3374
+        y: 284.3091118376402
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        selected: false
+        template: '{{ arg1 }}'
+        title: 模板转换
+        type: template-transform
+        variables:
+        - value_selector:
+          - '1747752928210'
+          - json
+          variable: arg1
+      height: 54
+      id: '1747814091755'
+      position:
+        x: 1550
+        y: 362.5
+      positionAbsolute:
+        x: 1550
+        y: 362.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        error_strategy: fail-branch
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: chart title
+            ja_JP: chart title
+            pt_BR: chart title
+            zh_Hans: 图表的标题
+          label:
+            en_US: title
+            ja_JP: title
+            pt_BR: title
+            zh_Hans: 标题
+          llm_description: chart title
+          max: null
+          min: null
+          name: title
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: data for generating chart, each number should be separated by ";"
+            ja_JP: data for generating chart, each number should be separated by ";"
+            pt_BR: data for generating chart, each number should be separated by ";"
+            zh_Hans: 用于生成饼图的数据，每个数字之间用 ";" 分隔
+          label:
+            en_US: data
+            ja_JP: data
+            pt_BR: data
+            zh_Hans: 数据
+          llm_description: data for generating pie chart, data should be a string
+            contains a list of numbers like "1;2;3;4;5"
+          max: null
+          min: null
+          name: data
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Categories for chart, each category should be separated by ";"
+            ja_JP: Categories for chart, each category should be separated by ";"
+            pt_BR: Categories for chart, each category should be separated by ";"
+            zh_Hans: 饼图的分类，每个分类之间用 ";" 分隔
+          label:
+            en_US: Categories
+            ja_JP: Categories
+            pt_BR: Categories
+            zh_Hans: 分类
+          llm_description: categories for pie chart, categories should be a string
+            contains a list of texts like "a;b;c;1;2" in order to match the data,
+            each category should be split by ";"
+          max: null
+          min: null
+          name: categories
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          categories: ''
+          data: ''
+          title: ''
+        provider_id: langgenius/echarts/echarts
+        provider_name: langgenius/echarts/echarts
+        provider_type: builtin
+        selected: false
+        title: 饼图
+        tool_configurations: {}
+        tool_description: 饼图
+        tool_label: 饼图
+        tool_name: pie_chart
+        tool_node_version: '2'
+        tool_parameters:
+          categories:
+            type: mixed
+            value: '{{#1749990827866.structured_output.class#}}'
+          data:
+            type: mixed
+            value: '{{#1749990827866.structured_output.data#}}'
+          title:
+            type: mixed
+            value: '{{#1749990827866.structured_output.title#}}'
+        type: tool
+      height: 90
+      id: '1747841365853'
+      position:
+        x: 3374
+        y: 411.4854113656378
+      positionAbsolute:
+        x: 3374
+        y: 411.4854113656378
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        error_strategy: fail-branch
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: chart title
+            ja_JP: chart title
+            pt_BR: chart title
+            zh_Hans: 图表的标题
+          label:
+            en_US: title
+            ja_JP: title
+            pt_BR: title
+            zh_Hans: 标题
+          llm_description: chart title
+          max: null
+          min: null
+          name: title
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: data for generating chart, each number should be separated by ";"
+            ja_JP: data for generating chart, each number should be separated by ";"
+            pt_BR: data for generating chart, each number should be separated by ";"
+            zh_Hans: 用于生成线性图表的数据，每个数字之间用 ";" 分隔
+          label:
+            en_US: data
+            ja_JP: data
+            pt_BR: data
+            zh_Hans: 数据
+          llm_description: data for generating linear chart, data should be a string
+            contains a list of numbers like "1;2;3;4;5"
+          max: null
+          min: null
+          name: data
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: X axis for chart, each text should be separated by ";"
+            ja_JP: X axis for chart, each text should be separated by ";"
+            pt_BR: X axis for chart, each text should be separated by ";"
+            zh_Hans: 线性图表的 x 轴，每个文本之间用 ";" 分隔
+          label:
+            en_US: X Axis
+            ja_JP: X Axis
+            pt_BR: X Axis
+            zh_Hans: x 轴
+          llm_description: x axis for linear chart, x axis should be a string contains
+            a list of texts like "a;b;c;1;2" in order to match the data
+          max: null
+          min: null
+          name: x_axis
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          data: ''
+          title: ''
+          x_axis: ''
+        provider_id: langgenius/echarts/echarts
+        provider_name: langgenius/echarts/echarts
+        provider_type: builtin
+        selected: false
+        title: 线性图表
+        tool_configurations: {}
+        tool_description: 线性图表
+        tool_label: 线性图表
+        tool_name: line_chart
+        tool_node_version: '2'
+        tool_parameters:
+          data:
+            type: mixed
+            value: '{{#1749990827866.structured_output.data#}}'
+          title:
+            type: mixed
+            value: '{{#1749990827866.structured_output.title#}}'
+          x_axis:
+            type: mixed
+            value: '{{#1749990827866.structured_output.xdata#}}'
+        type: tool
+      height: 90
+      id: '1747841371449'
+      position:
+        x: 3374
+        y: 532.7544044587819
+      positionAbsolute:
+        x: 3374
+        y: 532.7544044587819
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: is
+            id: fb812a5b-5552-4c88-a1ec-12cf68e73283
+            value: 柱状图
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          - comparison_operator: is
+            id: bf703fbd-7dff-49b1-adcd-bb818d0492f6
+            value: bar
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          id: 'true'
+          logical_operator: or
+        - case_id: 9ad98e85-20c2-4589-af7f-7a7bf305d2e2
+          conditions:
+          - comparison_operator: is
+            id: a10b7912-2512-4a5e-a8fa-fb0c3bf36422
+            value: 饼图
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          - comparison_operator: is
+            id: 40fe107b-d6a7-4402-af86-c427f27f2ea1
+            value: pie
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          id: 9ad98e85-20c2-4589-af7f-7a7bf305d2e2
+          logical_operator: or
+        - case_id: b6bba3b4-d2c8-4bd7-848a-65e0092964c6
+          conditions:
+          - comparison_operator: is
+            id: 63734b2b-b4d8-498a-9eaf-1550f2fd920d
+            value: 线状图
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          - comparison_operator: is
+            id: 6beeb6a3-1115-4d75-a2db-e236a5707a93
+            value: liner
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          - comparison_operator: is
+            id: 31d1ade7-fc7e-49eb-b745-ebb926345d79
+            value: line
+            varType: object
+            variable_selector:
+            - '1749990827866'
+            - structured_output
+            - type
+          id: b6bba3b4-d2c8-4bd7-848a-65e0092964c6
+          logical_operator: or
+        desc: ''
+        selected: false
+        title: 条件分支
+        type: if-else
+      height: 326
+      id: '1747841498631'
+      position:
+        x: 3070
+        y: 309.64285714285717
+      positionAbsolute:
+        x: 3070
+        y: 309.64285714285717
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: fab8e353-5d7f-4a01-94d0-2c715932d565
+          role: system
+          text: '基于下面信息及用户问题做简单的分析总结(不超过300字)，无需质疑数据的准确性：
+
+            图表类型：{{#1749990827866.structured_output.type#}}
+
+            图表标题：{{#1749990827866.structured_output.title#}}
+
+            图表纵轴数据：{{#1749990827866.structured_output.data#}}
+
+            图表横轴数据：{{#1749990827866.structured_output.xdata#}}
+
+            图表数据来源(数据库查询)：{{#1747814091755.output#}}
+
+
+            【约束】
+
+            无需质疑数据的准确性，数据来源真实完整，回答中不要出现数据真实性相关内容'
+        - id: 566956df-bbcf-421d-bc64-8db459cf1df6
+          role: user
+          text: '用户问题：{{#sys.query#}}
+
+            '
+        selected: false
+        title: 柱状图-数据分析
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1747841753120'
+      position:
+        x: 3711.3867292492264
+        y: 248.9285714285714
+      positionAbsolute:
+        x: 3711.3867292492264
+        y: 248.9285714285714
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#1747841753120.text#}}
+
+          {{#1747813580715.text#}}
+
+          {{#1747813580715.files#}}'
+        desc: ''
+        selected: false
+        title: 直接回复 1
+        type: answer
+        variables: []
+      height: 143
+      id: '1747841769222'
+      position:
+        x: 4010
+        y: 248.9285714285714
+      positionAbsolute:
+        x: 4010
+        y: 248.9285714285714
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: fab8e353-5d7f-4a01-94d0-2c715932d565
+          role: system
+          text: '基于下面信息及用户问题做简单的分析总结(不超过300字)，无需质疑数据的准确性：
+
+            图表类型：{{#1749990827866.structured_output.type#}}
+
+            图表标题：{{#1749990827866.structured_output.title#}}
+
+            图表数据：{{#1749990827866.structured_output.data#}}
+
+            图表分类数据：{{#1749990827866.structured_output.class#}}
+
+            图表数据来源(数据库查询)：{{#1747814091755.output#}}
+
+
+            【约束】
+
+            无需质疑数据的准确性，数据来源真实完整，回答中不要出现数据真实性相关内容'
+        - id: e776f6c2-98b1-41ba-b9ce-0387b771f431
+          role: user
+          text: 用户问题：{{#sys.query#}}
+        selected: false
+        title: 饼图-数据分析
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '17478778952540'
+      position:
+        x: 3725
+        y: 416.92857142857144
+      positionAbsolute:
+        x: 3725
+        y: 416.92857142857144
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: fab8e353-5d7f-4a01-94d0-2c715932d565
+          role: system
+          text: '基于下面信息及用户问题做简单的分析总结(不超过300字)，无需质疑数据的准确性：
+
+            图表类型：{{#1749990827866.structured_output.type#}}
+
+            图表标题：{{#1749990827866.structured_output.title#}}
+
+            图表纵轴数据：{{#1749990827866.structured_output.data#}}
+
+            图表横轴数据：{{#1749990827866.structured_output.xdata#}}
+
+            图表数据来源（数据库查询）: {{#1747814091755.output#}}
+
+
+            【约束】
+
+            无需质疑数据的准确性，数据来源真实完整，回答中不要出现数据真实性相关内容'
+        - id: 8ae3c426-259e-41fb-acdc-4f5d0b3a2e0d
+          role: user
+          text: 用户问题：{{#sys.query#}}
+        selected: false
+        title: 线性图-数据分析
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '17478779274600'
+      position:
+        x: 3734
+        y: 547.7857142857143
+      positionAbsolute:
+        x: 3734
+        y: 547.7857142857143
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#17478778952540.text#}}
+
+          {{#1747841365853.text#}}
+
+          {{#1747841365853.files#}}'
+        desc: ''
+        selected: false
+        title: 直接回复 2
+        type: answer
+        variables: []
+      height: 124
+      id: '17478779734590'
+      position:
+        x: 4024.1421355506964
+        y: 416.92857142857144
+      positionAbsolute:
+        x: 4024.1421355506964
+        y: 416.92857142857144
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#17478779274600.text#}}
+
+          {{#1747841371449.text#}}
+
+          {{#1747841371449.files#}}'
+        desc: ''
+        selected: false
+        title: 直接回复 3
+        type: answer
+        variables: []
+      height: 143
+      id: '17478780555980'
+      position:
+        x: 4024.1421355506964
+        y: 547.7857142857143
+      positionAbsolute:
+        x: 4024.1421355506964
+        y: 547.7857142857143
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.1
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 7088b1dc-2cea-4c92-a6d2-23f266f76555
+          role: system
+          text: '你是一个数据分析可视化专家，请根据用户问题与查询结果判断是否适合图表展示。
+
+            【判断逻辑】
+
+            输出结果必须是以下两个标签之一：
+
+            SHOW_CHART：适合图表展示
+
+            NO_CHART：不适合图表展示、或者更适合表格展示
+
+            请依据以下规则判断：
+
+            a. 如果查询结果包含多个数据点​（如按时间、类别、地区等统计），或具有分类、趋势、对比、分布等结构性特征，输出 SHOW_CHART；
+
+            b. 如果查询结果仅为 单一数值 或 缺乏可对比维度，输出 NO_CHART；
+
+            c. 如果用户明确提出 需要图表展示，无论结果结构如何，始终输出 SHOW_CHART；
+
+            d. 当前仅支持 柱状图 和 饼图，且每条记录最多包含 两列数据（X 轴与 Y 轴），若超出两列，输出NO_CHART。
+
+            【输出要求】
+
+            仅输出SHOW_CHART或NO_CHART，不要添加解释或其他内容。
+
+            /no think'
+        - id: 776d1602-c890-49cf-8b71-ae1612fe49d4
+          role: user
+          text: '用户问题：{{#sys.query#}}
+
+            查询结果：{{#1747814091755.output#}}'
+        selected: false
+        structured_output_enabled: true
+        title: 路径判断
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1747907776898'
+      position:
+        x: 2169.4285714285716
+        y: 613.9285714285714
+      positionAbsolute:
+        x: 2169.4285714285716
+        y: 613.9285714285714
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 56cc9577-14d0-44de-bf69-82bd5f820ccf
+            value: SHOW_CHART
+            varType: string
+            variable_selector:
+            - '1747907776898'
+            - text
+          id: 'true'
+          logical_operator: and
+        - case_id: b9de981d-33a1-47fc-b9a7-c455f659f2cb
+          conditions:
+          - comparison_operator: contains
+            id: 12639fd4-1067-4ba9-8f1b-b50e4cc0ed86
+            value: NO_CHART
+            varType: string
+            variable_selector:
+            - '1747907776898'
+            - text
+          id: b9de981d-33a1-47fc-b9a7-c455f659f2cb
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 条件分支 2
+        type: if-else
+      height: 174
+      id: '1747907978796'
+      position:
+        x: 2453.4285714285716
+        y: 613.9285714285714
+      positionAbsolute:
+        x: 2453.4285714285716
+        y: 613.9285714285714
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: fab8e353-5d7f-4a01-94d0-2c715932d565
+          role: system
+          text: '基于用户问题及查询结果做简单的分析总结（部分可考虑**表格形式**输出）(不超过300字)，无需质疑数据的准确性：
+
+            【字段含义说明】
+
+            若字段中出现“风险等级”或类似字段（不存在则不要在回答里面提及），字段值含义如下：
+
+            - 1 表示 低风险
+
+            - 2 表示 中风险
+
+            - 3 表示 高风险
+
+            请将该字段中的数值转换为对应的中文风险等级进行处理。
+
+            '
+        - id: 566956df-bbcf-421d-bc64-8db459cf1df6
+          role: user
+          text: '用户问题：{{#sys.query#}}
+
+            查询结果：{{#1747814091755.output#}}'
+        selected: false
+        title: 无图分析
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '17479081800800'
+      position:
+        x: 2766
+        y: 654.3571428571429
+      positionAbsolute:
+        x: 2766
+        y: 654.3571428571429
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#17479081800800.text#}}'
+        desc: ''
+        selected: false
+        title: 无图输出
+        type: answer
+        variables: []
+      height: 105
+      id: '1747908292502'
+      position:
+        x: 3070
+        y: 654.3571428571429
+      positionAbsolute:
+        x: 3070
+        y: 654.3571428571429
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: 目前暂不支持查询该功能
+        desc: ''
+        selected: false
+        title: 直接回复 6
+        type: answer
+        variables: []
+      height: 102
+      id: '1747910108539'
+      position:
+        x: 2766
+        y: 794.7857142857143
+      positionAbsolute:
+        x: 2766
+        y: 794.7857142857143
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 1a9af472-1d6e-4a6a-a354-ac5f6bfeda3d
+            value: 轨迹
+            varType: string
+            variable_selector:
+            - sys
+            - query
+          - comparison_operator: not contains
+            id: ede9de9b-dedc-46a4-9067-c5356025473d
+            value: '[{''records'': []}]'
+            varType: string
+            variable_selector:
+            - '1747814091755'
+            - output
+          id: 'true'
+          logical_operator: and
+        - case_id: 831e9b1d-8a8a-44f4-8a89-cb71a68096d0
+          conditions:
+          - comparison_operator: contains
+            id: 65bb5363-8a3e-4d3f-903f-de15aa7f099c
+            value: '[{''records'': []}]'
+            varType: string
+            variable_selector:
+            - '1747814091755'
+            - output
+          id: 831e9b1d-8a8a-44f4-8a89-cb71a68096d0
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 条件分支 3
+        type: if-else
+      height: 200
+      id: '1747987320346'
+      position:
+        x: 1854
+        y: 362.5
+      positionAbsolute:
+        x: 1854
+        y: 362.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        error_strategy: fail-branch
+        model:
+          completion_params:
+            temperature: 0
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 78c15477-b2aa-4bca-801e-fafa4b8fe991
+          role: system
+          text: '【工作流程】
+
+            1.从{{#1747751818180.result#}}中仅仅提取beginTime、deviceType、endTime
+
+            2.从{{#1747814091755.output#}}中仅仅提取deviceCode信息
+
+
+            【输入格式】
+
+            {
+
+            beginTime:
+
+            deviceCode:
+
+            deviceType:
+
+            endTime:
+
+            ｝
+
+
+            【约束】
+
+            严格按照工作流程执行，不要交叉提取，按限定内容提取信息
+
+            未找到，返回"该车辆无轨迹信息"即可
+
+
+            每天的时间都按00:00:00  23:59:59填入'
+        selected: false
+        structured_output:
+          schema:
+            additionalProperties: false
+            properties:
+              beginTime:
+                type: string
+              deviceCode:
+                type: string
+              deviceType:
+                type: string
+              endTime:
+                type: string
+            required:
+            - beginTime
+            - deviceCode
+            - deviceType
+            - endTime
+            type: object
+        structured_output_enabled: true
+        title: 轨迹内容提取
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 126
+      id: '1747987368698'
+      position:
+        x: 2154.849784429264
+        y: 199.21428571428572
+      positionAbsolute:
+        x: 2154.849784429264
+        y: 199.21428571428572
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#1747987368698.structured_output#}}
+
+          '
+        desc: ''
+        selected: false
+        title: 轨迹数据输出
+        type: answer
+        variables: []
+      height: 105
+      id: '1747996238797'
+      position:
+        x: 2453.4285714285716
+        y: 199.21428571428572
+      positionAbsolute:
+        x: 2453.4285714285716
+        y: 199.21428571428572
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: 暂不支持
+        desc: ''
+        selected: false
+        title: 直接回复 7
+        type: answer
+        variables: []
+      height: 102
+      id: '1747998392408'
+      position:
+        x: 1550
+        y: 434.07142857142856
+      positionAbsolute:
+        x: 1550
+        y: 434.07142857142856
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: 暂不支持
+        desc: ''
+        selected: false
+        title: 直接回复 8
+        type: answer
+        variables: []
+      height: 102
+      id: '1747998431868'
+      position:
+        x: 942
+        y: 497.6428571428572
+      positionAbsolute:
+        x: 942
+        y: 497.6428571428572
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: 该车辆无轨迹信息
+        desc: ''
+        selected: false
+        title: 直接回复 9
+        type: answer
+        variables: []
+      height: 102
+      id: '1747998467066'
+      position:
+        x: 2453.4285714285716
+        y: 356.7857142857143
+      positionAbsolute:
+        x: 2453.4285714285716
+        y: 356.7857142857143
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: 该部分数据为空
+        desc: ''
+        selected: false
+        title: 直接回复 10
+        type: answer
+        variables: []
+      height: 102
+      id: '1749177133063'
+      position:
+        x: 2169.4285714285716
+        y: 468.3571428571428
+      positionAbsolute:
+        x: 2169.4285714285716
+        y: 468.3571428571428
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1747814091755'
+          - output
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen2.5:32b
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 568942f5-ed39-40c8-90ad-cd182653c582
+          role: system
+          text: " 【角色设定】\n假设你是一位数据抽取专家，通过分析抽取指定数据结构内的信息，用于后续生成图表；\n\n【字段含义说明】\n若字段中出现“风险等级”或类似字段，字段值含义如下：\n\
+            - 1 表示 低风险\n- 2 表示 中风险\n- 3 表示 高风险\n请将该字段中的数值转换为对应的中文风险等级进行处理。\n\n【不同类型图表所需要提取的信息】\n\
+            1. 柱状图：现在要3个数据，title是标题,（材料中不存在则自动生成一个中文标题），data是y轴的数据，x-axis是x轴的数据\n\
+            2. 饼图：现在要3个数据，title是标题,（材料中不存在则自动生成一个中文标题），data是数据，class是类别\n3.线性图：现在要3个数据，title是标题,（材料中不存在则自动生成一个中文标题），data是y轴的数据，x-axis是x轴的数据\n\
+            \n【工作流程】\n1. 理解用户问题和目的及相关数据\n2. 首先通过用户问题了解用户是否要求特定图表展示，如果有按用户需求输出；如果没有，则通过用户问题和查询结果自主判断用户问题和所提供的数据适合哪种图表输出（柱状图、饼图、线形图）\n\
+            3.若\n3. 根据所选图表类型的不同提取数据，不要提取其他内容，输出如下：\n - ...\ntype: 柱状图/饼图/线性图（中文）\n\
+            title :\ndata :\nx-axis（可选）:\nclass(可选):\n...\n其中每个\"data与x-axis与class”，每个文本之间用\"\
+            ;\"分隔\n4. 将上个步骤中提取的信息(如果存在)中，\ntitle信息赋值给这里的title,\nxdata赋值给这里的x_axis,\n\
+            ydata赋值给这里的data,\nclass赋值给这里的class\n\n【约束】\n图表标题必须是中文\n如果用户要求特定图表展示，则按用户需求输出"
+        - id: 179945f5-74f6-4c79-81ba-49b1c7e1e97d
+          role: user
+          text: '问题：{{#sys.query#}}
+
+            查询结果：{{#1747814091755.output#}}'
+        selected: false
+        structured_output:
+          schema:
+            additionalProperties: false
+            properties:
+              class:
+                type: string
+              data:
+                type: string
+              title:
+                type: string
+              type:
+                type: string
+              xdata:
+                type: string
+            required:
+            - data
+            - title
+            - type
+            type: object
+        structured_output_enabled: true
+        title: 参数提取器
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1749990827866'
+      position:
+        x: 2766
+        y: 422.7857142857143
+      positionAbsolute:
+        x: 2766
+        y: 422.7857142857143
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen3:14b-q4_K_M
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: fab8e353-5d7f-4a01-94d0-2c715932d565
+          role: system
+          text: '基于用户问题及查询结果做简单的分析总结（部分可考虑**表格形式**输出）(不超过300字)，无需质疑数据的准确性：
+
+            【字段含义说明】
+
+            若字段中出现“风险等级”或类似字段，字段值含义如下：
+
+            - 1 表示 低风险
+
+            - 2 表示 中风险
+
+            - 3 表示 高风险
+
+            请将该字段中的数值转换为对应的中文风险等级进行处理。
+
+            若字段中未出现则不要提及！！！
+
+            '
+        - id: 566956df-bbcf-421d-bc64-8db459cf1df6
+          role: user
+          text: '用户问题：{{#sys.query#}}
+
+            查询结果：{{#1747814091755.output#}}'
+        selected: false
+        title: 无图分析 (1)
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '17499920264110'
+      position:
+        x: 3734
+        y: 725.158960377602
+      positionAbsolute:
+        x: 3734
+        y: 725.158960377602
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#17499920264110.text#}}'
+        desc: ''
+        selected: false
+        title: 直接回复 11
+        type: answer
+        variables: []
+      height: 105
+      id: '1749992103021'
+      position:
+        x: 4040.4834398722987
+        y: 725.158960377602
+      positionAbsolute:
+        x: 4040.4834398722987
+        y: 725.158960377602
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: -467.59805240373953
+      y: 83.41873767315775
+      zoom: 0.8179085315594723
